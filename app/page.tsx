@@ -17,7 +17,7 @@ const carouselEvents = [
     description:
       "Rejoignez-nous pour cette conférence majeure qui réunira des experts de renommée mondiale pour discuter des stratégies économiques dans l'ère post-pandémie.",
     date: "15-16 mars 2023",
-    image: "/images/10esommetdesthinkstankdafriquevalide.jpg",
+    image: "/images/10esommetdesthinkstankdafriquevalide.jpg", 
     learnMoreLink: "/activites/programme#event1",
     registerLink: "/activites/programme/inscription",
   },

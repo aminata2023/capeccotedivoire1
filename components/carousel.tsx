@@ -39,17 +39,18 @@ export function EventCarousel({ events }: { events: { title: string; description
       >
         <div className="p-1">
           <div className="overflow-hidden border-0 shadow-lg">
-            <div className="relative aspect-[6720/4480] w-full">
+            <div className="relative w-full h-screen">
               <img
                 src={event.image || "/placeholder.svg"}
                 alt={event.title}
-                //className="object-cover w-full h-full    style={{ maxWidth: '6720px', maxHeight: '4480px' }}"
-                className="relative w-full" 
+                className="object-cover w-full h-full h-screen   style={{ maxWidth: '6720px', maxHeight: '4480px' }}"
+                //className="relative w-full" 
                  //className="object-cover max-w-full max-h-[4480px] w-auto"
                  //className="object-cover w-[2048px] h-[842px]"
                 // className="text-5xl md:text-4xl font-bold text-white mb-4"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 md:p-8">
+              {/* taille du texte sur l'image */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-center p-6 md:p-8">
                 <div className="flex items-center text-white/80 mb-2">
                   <span className="text-sm md:text-base">{event.date}</span>
                 </div>

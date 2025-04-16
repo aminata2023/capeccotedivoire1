@@ -31,18 +31,18 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold mb-4">Notre Histoire</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Fondé en 1998, le CAPEC (Cellule d'Analyse de Politiques Économiques du CIRES) est né de la volonté
-                    de créer un centre d'excellence en matière d'analyse économique et de recherche appliquée.
+                  Créée en 1997, la CAPEC (Cellule d'Analyse de Politiques Économiques du CIRES) a vu le 
+                  jour pour répondre au besoin de renforcer l'expertise nationale en matière d'analyse 
+                  économique et d'aide à la décision publique.
                   </p>
                   <p>
-                    Depuis sa création, le CAPEC s'est imposé comme un acteur incontournable dans le domaine de
-                    l'analyse des politiques économiques, contribuant activement au débat public et à la prise de
-                    décision.
+                  Depuis lors, la CAPEC joue un rôle central dans l'élaboration et l'évaluation des 
+                  politiques économiques, soutenant les institutions publiques à travers des travaux
+                  de recherche rigoureux.
                   </p>
                   <p>
-                    Au fil des années, notre centre a développé une expertise reconnue dans plusieurs domaines clés,
-                    notamment la macroéconomie, le développement durable, les politiques sociales et l'économie
-                    internationale.
+                  Elle s'est bâtie une solide réputation dans des domaines clés comme la modélisation 
+                  macroéconomique, l'économie sociale, le développement et la planification stratégique.
                   </p>
                 </div>
               </div>
