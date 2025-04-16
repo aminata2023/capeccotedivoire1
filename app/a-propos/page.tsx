@@ -192,22 +192,8 @@ const researchTeam = [
     name: "Prof. AHOURE Alban A.E.",
     title: "Directeur de la CAPEC",
     bio: "Expert en économie du développement avec un focus sur les politiques d'inclusion financière.",
-    photo: "/images/drcapec.jpg?text=Dr.+Jean+Touré&height=200&width=200",
+    photo: "/images/directeurcapec.jpg?text=Dr.+Jean+Touré&height=200&width=200",
   },
-  /*{
-    id: "4",
-    name: "Dr. Fatou Sow",
-    title: "Chercheuse Senior",
-    bio: "Spécialiste des questions de genre et d'économie sociale, docteure de l'Université de Paris.",
-    photo: "/placeholder.svg?text=Dr.+Fatou+Sow&height=200&width=200",
-  },
-  {
-    id: "5",
-    name: "Dr. Paul Mensah",
-    title: "Chercheur",
-    bio: "Économiste spécialisé dans l'analyse des politiques commerciales et l'intégration régionale.",
-    photo: "/placeholder.svg?text=Dr.+Paul+Mensah&height=200&width=200",
-  },*/
 ]
 
 const adminTeam = [
