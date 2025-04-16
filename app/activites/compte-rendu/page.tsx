@@ -77,7 +77,7 @@ export default function CompteRenduActivitesPage() {
   )
 }
 
-function EventCard({ event }) {
+function EventCard({ event }: { event: any }) {
   return (
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-3 gap-4">

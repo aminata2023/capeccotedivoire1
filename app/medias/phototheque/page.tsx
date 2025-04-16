@@ -8,10 +8,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
 export default function PhotothequePage() {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState<Photo | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
 
-  const openLightbox = (image, index) => {
+  interface Photo {
+    id: string
+    title: string
+    date: string
+    description: string
+    src: string
+  }
+
+  const openLightbox = (image: Photo, index: number): void => {
     setSelectedImage(image)
     setCurrentIndex(index)
   }

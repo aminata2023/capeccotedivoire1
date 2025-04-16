@@ -97,7 +97,7 @@ export default function RapportActivitesPage() {
   )
 }
 
-function ReportCard({ report }) {
+function ReportCard({ report }  : { report: any }) {
   return (
     <Card className="overflow-hidden flex flex-col h-full">
       <div className="relative aspect-[4/3] w-full">

@@ -8,10 +8,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent } from "@/components/ui/card"
 import { Play, X } from "lucide-react"
 
-export default function VideothequeePage() {
-  const [selectedVideo, setSelectedVideo] = useState(null)
+interface Video {
+  id: string
+  title: string
+  date: string
+  description: string
+  thumbnail?: string
+}
 
-  const openVideo = (video) => {
+export default function VideothequeePage() {
+  const [selectedVideo, setSelectedVideo] = useState<Video | null>(null)
+
+  const openVideo = (video: Video) => {
     setSelectedVideo(video)
   }
 
@@ -104,7 +112,7 @@ export default function VideothequeePage() {
   )
 }
 
-function VideoCard({ video, onPlay }) {
+function VideoCard({ video, onPlay }: { readonly video: Video; readonly onPlay: () => void }) {
   return (
     <Card className="overflow-hidden">
       <div className="relative aspect-video cursor-pointer group" onClick={onPlay}>

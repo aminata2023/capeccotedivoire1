@@ -225,7 +225,16 @@ export default function FormationsPage() {
   )
 }
 
-function ProgramCard({ program }) {
+interface Program {
+  id: string;
+  title: string;
+  description: string;
+  duration: string;
+  audience: string;
+  image?: string;
+}
+
+function ProgramCard({ program }: { program: Program }) {
   return (
     <Card className="overflow-hidden flex flex-col h-full">
       <div className="relative aspect-video w-full">
@@ -254,7 +263,7 @@ function ProgramCard({ program }) {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
 // Sample data

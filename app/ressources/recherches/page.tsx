@@ -217,7 +217,7 @@ export default function RecherchesPage() {
   )
 }
 
-function ProjectCard({ project }) {
+function ProjectCard({ project }: { project: any }) {
   return (
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-3 gap-4">

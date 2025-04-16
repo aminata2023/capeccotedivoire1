@@ -8,7 +8,7 @@ import { Calendar, ChevronRight,ChevronLeft, Plus } from "lucide-react"
 import { useEffect, useState } from "react";
 
 
-export function EventCarousel({ events }) {
+export function EventCarousel({ events }: { events: { title: string; description: string; date: string; image: string; registerLink?: string }[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Fonction pour passer à l'élément suivant

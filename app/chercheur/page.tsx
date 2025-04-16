@@ -67,7 +67,7 @@ export default function ChercheurPage() {
   )
 }
 
-function ResearcherCard({ researcher }) {
+function ResearcherCard({ researcher }  : { researcher: any }) {
   return (
     <Card className="overflow-hidden hover:shadow-md transition-shadow">
       <div className="flex flex-col md:flex-row items-center">
@@ -85,11 +85,11 @@ function ResearcherCard({ researcher }) {
           <div className="mt-2 space-y-2">
             <p className="text-sm text-muted-foreground line-clamp-2">{researcher.bio}</p>
             <div className="flex flex-wrap gap-2 mt-2">
-              {researcher.expertise.map((exp, index) => (
+                {researcher.expertise.map((exp: string, index: number) => (
                 <span key={index} className="text-xs bg-gray-100 px-2 py-1 rounded-full">
                   {exp}
                 </span>
-              ))}
+                ))}
             </div>
             <div className="mt-4">
               <Link href={`/chercheur/${researcher.id}`}>

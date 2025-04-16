@@ -216,20 +216,21 @@ const adminTeam = [
     name: "Prof. KIMOU Assi José Carlos",
     title: "Responsable Administrative",
     bio: "Coordonne les activités administratives et financières du CAPEC depuis 10 ans.",
-    photo: "/placeholder.svg?text=Aïcha+Bamba&height=200&width=200",
+    photo: "/images/profkimou.jpg?text=Aïcha+Bamba&height=200&width=200",
   },
   {
     id: "7",
-    name: "Kofi Addo",
+    name: "Dr BECHO ISABELLE EPSE N’DRI",
     title: "Chargé de Communication",
     bio: "Responsable de la stratégie de communication et des relations publiques du CAPEC.",
-    photo: "/placeholder.svg?text=Kofi+Addo&height=200&width=200",
+    photo: "/images/drisabellebeco.jpg?text=Kofi+Addo&height=200&width=200",
+    
   },
   {
     id: "8",
-    name: "Kofi Addo",
+    name: "Dr KRAMO Kouakou Germain",
     title: "Chargé de Communication",
     bio: "Responsable de la stratégie de communication et des relations publiques du CAPEC.",
-    photo: "/placeholder.svg?text=Kofi+Addo&height=200&width=200",
+    photo: "/images/profkramo.jpg?text=Kofi+Addo&height=200&width=200",
   }
 ]

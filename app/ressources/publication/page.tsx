@@ -37,7 +37,18 @@ export default function PublicationsPage() {
   })
 
   // Filtrer les publications par chercheur pour l'onglet "Recherches par chercheur"
-  const getPublicationsByChercheur = (chercheurId) => {
+  interface Publication {
+    id: string
+    title: string
+    excerpt: string
+    date: string
+    category: string
+    author: string
+    authorId: string
+    coverImage: string
+  }
+
+  const getPublicationsByChercheur = (chercheurId: string): Publication[] => {
     return publications.filter((pub) => pub.authorId === chercheurId)
   }
 
@@ -202,7 +213,19 @@ export default function PublicationsPage() {
   )
 }
 
-function PublicationCard({ publication }) {
+interface PublicationCardProps {
+  publication: {
+    id: string;
+    title: string;
+    excerpt: string;
+    date: string;
+    category: string;
+    author?: string;
+    coverImage?: string;
+  };
+}
+
+function PublicationCard({ publication }: PublicationCardProps) {
   return (
     <Card className="overflow-hidden h-full flex flex-col">
       <div className="aspect-video w-full overflow-hidden">
@@ -239,14 +262,35 @@ function PublicationCard({ publication }) {
               <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
           </Link>
-         
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
-function ChercheurPublicationsCard({ chercheur, publications }) {
+interface Chercheur {
+  id: string;
+  name: string;
+  title: string;
+  photo: string;
+  expertise: string[];
+}
+
+interface ChercheurPublicationsCardProps {
+  chercheur: Chercheur;
+  publications: {
+    id: string;
+    title: string;
+    excerpt: string;
+    date: string;
+    category: string;
+    author: string;
+    authorId: string;
+    coverImage: string;
+  }[];
+}
+
+function ChercheurPublicationsCard({ chercheur, publications }: ChercheurPublicationsCardProps) {
   return (
     <Card className="overflow-hidden h-full flex flex-col">
       <CardContent className="p-6">
@@ -316,17 +360,26 @@ function ChercheurPublicationsCard({ chercheur, publications }) {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
-function getCategoryLabel(category) {
-  const categories = {
+interface CategoryLabels {
+  rapport: string;
+  etude: string;
+  "policy-brief": string;
+  article: string;
+  [key: string]: string;
+}
+
+function getCategoryLabel(category: keyof CategoryLabels): string {
+
+  const categories: CategoryLabels = {
     rapport: "Rapport",
     etude: "Étude",
     "policy-brief": "Note de politique",
     article: "Article académique",
-  }
-  return categories[category] || category
+  };
+  return categories[category as keyof CategoryLabels] || (category as string);
 }
 
 // Données des chercheurs

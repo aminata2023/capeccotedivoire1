@@ -157,7 +157,7 @@ export default function ReferencesPage() {
   )
 }
 
-function ReferenceCard({ reference }) {
+function ReferenceCard({ reference }: { reference: { id: string; name: string; type: string; logo?: string } }) {
   return (
     <div className="flex flex-col items-center text-center">
       <div className="relative w-24 h-24 mb-4">

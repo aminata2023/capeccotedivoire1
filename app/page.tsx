@@ -39,12 +39,12 @@ const carouselEvents = [
     learnMoreLink: "/formations/econometrie",
     registerLink: "/formations/inscription",
   },
- /* {
+   /*{
     title: "Séminaire de formation en économétrie appliquée",
     description:
       "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants, avec un focus sur les applications pratiques.",
     date: "5-7 juin 2023",
-    image: "/images/estherubo.jpg",
+    image: "/images/leçoninaugurale8octobre20242.jpg",
     learnMoreLink: "/formations/econometrie",
     registerLink: "/formations/inscription",
   },*/
@@ -89,11 +89,11 @@ export default function Home() {
                   Conduire des recherches de haute qualité sur les questions économiques pertinentes.
                 </p>
                 <Image
-                  src="/images/30.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/recherch.jpg?text=Recherche+Économique&height=120&width=240"
                   alt="Recherche économique"
                   width={240}
-                  height={120}
-                  className="rounded-md mt-1"
+                  height={150}
+                  className="w-full h-auto rounded-md object-cover transition-all duration-300 ease-in-out hover:brightness-110 hover:opacity-90"            
                 />
               </CardContent>
             </Card>
@@ -105,14 +105,14 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold">Formation</h3>
                 <p className="text-sm text-muted-foreground">
-                  Former la prochaine génération d'analystes et de chercheurs en économie.
+                  Former la prochaine génération d'analystes et de chercheurs en économie Africaine.
                 </p>
                 <Image
-                  src="/images/30.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/test.jpg?text=Recherche+Économique&height=120&width=240"
                   alt="Formation académique"
                   width={240}
-                  height={120}
-                  className="rounded-md mt-1"
+                  height={150}
+                  className="w-full h-auto rounded-md object-cover transition-all duration-300 ease-in-out hover:brightness-110 hover:opacity-90"
                 />
               </CardContent>
             </Card>
@@ -127,11 +127,11 @@ export default function Home() {
                   Fournir des conseils stratégiques aux décideurs politiques et aux parties prenantes.
                 </p>
                 <Image
-                  src="/images/30.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/conseil.jpg?text=Recherche+Économique&height=120&width=240"
                   alt="Conseil stratégique"
                   width={240}
-                  height={120}
-                  className="rounded-md mt-1"
+                  height={150}
+                  className="w-full h-auto rounded-md object-cover transition-all duration-300 ease-in-out hover:brightness-110 hover:opacity-90"
                 />
               </CardContent>
             </Card>

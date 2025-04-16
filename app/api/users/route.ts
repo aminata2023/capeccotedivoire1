@@ -20,9 +20,9 @@ export async function POST(request: Request) {
     name,
   };
 
-  const user = await prisma.user.create({
+  /*const user = await prisma.user.create({
     data: data,
-  });
+  });*/
 
-  return Response.json({ user });
+  //return Response.json({ user });
 }

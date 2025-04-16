@@ -138,7 +138,16 @@ export default function RessourcesPage() {
   )
 }
 
-function ResourceCard({ icon, title, description, href, color, image }) {
+interface ResourceCardProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  href: string;
+  color: string;
+  image: string;
+}
+
+function ResourceCard({ icon, title, description, href, color, image }: ResourceCardProps) {
   return (
     <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
       <div className="relative aspect-video w-full">
@@ -168,6 +177,7 @@ function ResourceCard({ icon, title, description, href, color, image }) {
     </Card>
   )
 }
+//</Link>
 
 // Sample data
 const popularResources = [

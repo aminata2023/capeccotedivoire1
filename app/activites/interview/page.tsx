@@ -70,7 +70,7 @@ export default function InterviewPage() {
   )
 }
 
-function InterviewCard({ interview }) {
+function InterviewCard({ interview }: { interview: any })  {
   return (
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-3 gap-4">
@@ -120,7 +120,7 @@ function InterviewCard({ interview }) {
   )
 }
 
-function DebatCard({ debat }) {
+function DebatCard({ debat }  : { debat: any }) {
   return (
     <Card className="overflow-hidden">
       <div className="grid md:grid-cols-3 gap-4">
@@ -159,7 +159,7 @@ function DebatCard({ debat }) {
   )
 }
 
-function QuestionCard({ question }) {
+function QuestionCard({ question }  : { question: any }) {
   return (
     <Card>
       <CardContent className="p-6">

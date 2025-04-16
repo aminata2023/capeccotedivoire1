@@ -114,7 +114,7 @@ export default function PublicationsPage() {
   )
 }
 
-function PublicationCard({ publication }) {
+function PublicationCard({ publication }: { publication: any }) {
   return (
     <Card className="overflow-hidden">
       <div className="aspect-video w-full overflow-hidden">
@@ -150,14 +150,18 @@ function PublicationCard({ publication }) {
   )
 }
 
-function getCategoryLabel(category) {
-  const categories = {
+interface CategoryLabels {
+  [key: string]: string;
+}
+
+function getCategoryLabel(category: string): string {
+  const categories: CategoryLabels = {
     rapport: "Rapport",
     etude: "Étude",
     "policy-brief": "Note de politique",
     article: "Article académique",
-  }
-  return categories[category] || category
+  };
+  return categories[category] || category;
 }
 
 // Sample data with updated image placeholders

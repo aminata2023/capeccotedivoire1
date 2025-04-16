@@ -88,7 +88,7 @@ export default function NewsPage() {
   )
 }
 
-function NewsCard({ news }) {
+function NewsCard({ news } : { news: { id: string; title: string; excerpt: string; date: string; image?: string } }) {
   return (
     <Card className="overflow-hidden">
       {news.image && (

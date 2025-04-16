@@ -126,7 +126,7 @@ export default function ActivitesPage() {
   )
 }
 
-function ActivityCard({ icon, title, description, href, color }) {
+function ActivityCard({ icon, title, description, href, color }: { icon: React.ReactNode; title: string; description: string; href: string; color: string }) {
   return (
     <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
       <CardContent className="p-6 flex flex-col h-full">
