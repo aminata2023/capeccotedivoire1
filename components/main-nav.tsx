@@ -1,123 +1,95 @@
 "use client"
-
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { ChevronDown } from "lucide-react"
-import { title } from "process"
+import { ChevronDown, ChevronRight } from "lucide-react"
 import { navItems } from "./navItems"
-
-export type NavItem = {
-  title: string
-  href: string
-  submenu?: NavItem[]
-}
 
 export function MainNav() {
   const pathname = usePathname()
-  const [openMobileSubmenu, setOpenMobileSubmenu] = useState<string | null>(null)
   const [hoverItem, setHoverItem] = useState<string | null>(null)
 
   return (
-    <div className="flex items-center">
-      <Link href="/" className="flex items-center space-x-2 mr-6">
-        <div className="relative w-10 h-10 bg-white rounded-sm flex items-center justify-center overflow-hidden">
-          <Image
-            src={"/images/logocapec.png"}
-           // src="/placeholder.svg?text=CAPEC&height=32&width=32&fontsize=10&bgcolor=FFFFFF"
-            alt="CAPEC Logo"
-            width={32}
-            height={32}
-            className="object-contain"
-          />
+    <header className="w-full bg-green-800">
+      <div className="flex items-center justify-between min-h-[64px] px-6 w-full">
+        {/* Logo + Titre */}
+        <div className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center">
+            <div className="relative w-14 h-14 bg-white rounded-sm flex items-center justify-center overflow-hidden mr-3">
+              <Image
+                src="/images/logocapec.png"
+                alt="CAPEC Logo"
+                width={48}
+                height={48}
+                className="object-contain"
+              />
+            </div>
+            <span className="font-bold text-white text-xl">CAPEC</span>
+          </Link>
         </div>
-        <span className="font-bold">CAPEC</span>
-      </Link>
-      <nav className="hidden md:flex items-center space-x-6">
-        {navItems.map((item) => {
-          const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`)
 
-          if (item.submenu) {
-            return (
-              <div
-                key={item.title}
-                className="relative group"
-                onMouseEnter={() => setHoverItem(item.title)}
-                onMouseLeave={() => setHoverItem(null)}
-              >
-                <Link
-                  href={item.href}
-                  className={cn(
-                    "flex items-center text-sm font-medium transition-colors hover:text-ci-orange",
-                    isActive ? "text-ci-orange" : "text-foreground",
-                  )}
-                >
-                  {item.title}
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </Link>
+        {/* Navigation principale */}
+        <nav className="hidden md:flex flex-1 justify-center">
+          <div className="flex space-x-1 w-full justify-evenly">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`)
+              return (
+                <div key={item.title} className="relative group"
+                  onMouseEnter={() => setHoverItem(item.title)}
+                  onMouseLeave={() => setHoverItem(null)}>
 
-                {/* Sous-menu avec un padding pour éviter les espaces vides entre le menu et le sous-menu */}
-                <div
-                  className={cn(
-                    "absolute left-0 top-full pt-2 z-50",
-                    hoverItem === item.title ? "block" : "hidden group-hover:block",
-                  )}
-                >
-                  <div className="w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div className="py-1" role="menu" aria-orientation="vertical">
-                      {item.submenu.map((subItem) => {
-                        const isSubActive = pathname === subItem.href
-                        return (
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      "px-3 py-1 text-xs font-medium text-white uppercase hover:text-ci-orange transition-colors",
+                      isActive && "text-ci-orange"
+                    )}
+                  >
+                    {item.title}
+                    {item.submenu && <ChevronDown className="ml-1 h-3 w-3 inline" />}
+                  </Link>
+
+                  {item.submenu && (
+                    <div className={cn(
+                      "absolute left-0 top-full pt-1 z-50 w-56",
+                      hoverItem === item.title ? "block" : "hidden group-hover:block"
+                    )}>
+                      <div className="bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.title}
                             href={subItem.href}
                             className={cn(
-                              "block px-4 py-2 text-sm relative group/item transition-all duration-200",
-                              isSubActive ? "bg-ci-green text-white" : "text-gray-700 hover:text-white",
+                              "block px-4 py-2 text-sm text-gray-700 hover:bg-ci-green hover:text-white transition-colors",
+                              pathname === subItem.href && "bg-ci-green text-white"
                             )}
-                            role="menuitem"
                           >
-                            {/* Overlay d'animation pour l'effet de survol */}
-                            <span
-                              className={cn(
-                                "absolute inset-0 bg-ci-green transform origin-left transition-transform duration-300 ease-out",
-                                isSubActive ? "scale-x-100" : "scale-x-0 group-hover/item:scale-x-100",
-                              )}
-                              aria-hidden="true"
-                            ></span>
-                            <span className="relative z-10">{subItem.title}</span>
+                            {subItem.title}
                           </Link>
-                        )
-                      })}
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
-              </div>
-            )
-          }
+              )
+            })}
+          </div>
+        </nav>
 
-          return (
-            <Link
-              key={item.title}
-              href={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-ci-orange",
-                isActive ? "text-ci-orange" : "text-foreground",
-              )}
-            >
-              {item.title}
-            </Link>
-          )
-        })}
-      </nav>
+        {/* Contact info */}
+        <div className="hidden md:flex items-center space-x-4 text-sm text-white shrink-0">
+          <span className="text-gray-400">|</span>
+          <span>Contact: (225) 27 22 44 41 24</span>
+        </div>
 
-      {/* Mobile Navigation Toggle */}
-      <div className="md:hidden ml-auto">
-        <MobileNav />
+        {/* Menu mobile */}
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
       </div>
-    </div>
+    </header>
   )
 }
 
@@ -126,102 +98,66 @@ function MobileNav() {
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null)
   const pathname = usePathname()
 
-  const toggleSubmenu = (title: string) => {
-    if (openSubmenu === title) {
-      setOpenSubmenu(null)
-    } else {
-      setOpenSubmenu(title)
-    }
-  }
-
   return (
-    <div>
-      <button onClick={() => setOpen(!open)} className="flex items-center space-x-2 text-sm font-medium">
-        <span>Menu</span>
-        <div className="w-6 h-5 flex flex-col justify-between">
-          <span
-            className={`h-0.5 w-full bg-current transform transition duration-300 ${open ? "rotate-45 translate-y-2" : ""}`}
-          ></span>
-          <span
-            className={`h-0.5 w-full bg-current transition duration-300 ${open ? "opacity-0" : "opacity-100"}`}
-          ></span>
-          <span
-            className={`h-0.5 w-full bg-current transform transition duration-300 ${open ? "-rotate-45 -translate-y-2" : ""}`}
-          ></span>
+    <div className="relative">
+      <button onClick={() => setOpen(!open)} className="text-white p-2">
+        <div className="w-6 flex flex-col space-y-1">
+          <span className={`h-0.5 bg-current transition ${open ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+          <span className={`h-0.5 bg-current transition ${open ? 'opacity-0' : 'opacity-100'}`}></span>
+          <span className={`h-0.5 bg-current transition ${open ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
         </div>
       </button>
 
       {open && (
-        <div className="absolute top-16 left-0 right-0 bg-white shadow-md z-50 p-4">
-          <nav className="flex flex-col space-y-4">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href || pathname.startsWith(`${item.href}/`)
-
-              if (item.submenu) {
-                return (
-                  <div key={item.title} className="space-y-2">
+        <div className="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl z-50 py-2">
+          <div className="border-b border-gray-100 px-4 py-3 text-sm font-medium text-gray-900">
+            Menu CAPEC
+          </div>
+          <nav className="space-y-1 px-2">
+            {navItems.map((item) => (
+              <div key={item.title}>
+                {item.submenu ? (
+                  <>
                     <button
-                      onClick={() => toggleSubmenu(item.title)}
-                      className={cn(
-                        "flex items-center justify-between w-full text-sm font-medium transition-colors hover:text-ci-orange",
-                        isActive ? "text-ci-orange" : "text-foreground",
-                      )}
+                      onClick={() => setOpenSubmenu(openSubmenu === item.title ? null : item.title)}
+                      className="flex w-full justify-between items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-50"
                     >
                       {item.title}
-                      <ChevronDown
-                        className={cn("h-4 w-4 transition-transform", openSubmenu === item.title ? "rotate-180" : "")}
-                      />
+                      <ChevronRight className={`h-4 w-4 transition-transform ${openSubmenu === item.title ? 'rotate-90' : ''}`} />
                     </button>
                     {openSubmenu === item.title && (
-                      <div className="pl-4 space-y-2 border-l-2 border-gray-200">
-                        {item.submenu.map((subItem) => {
-                          const isSubActive = pathname === subItem.href
-                          return (
-                            <Link
-                              key={subItem.title}
-                              href={subItem.href}
-                              className={cn(
-                                "block text-sm py-1 px-2 rounded relative overflow-hidden group/mobile",
-                                isSubActive ? "bg-ci-green text-white" : "text-gray-700 hover:text-white",
-                              )}
-                              onClick={() => setOpen(false)}
-                            >
-                              {/* Overlay d'animation pour l'effet de survol */}
-                              <span
-                                className={cn(
-                                  "absolute inset-0 bg-ci-green transform origin-left transition-transform duration-300 ease-out",
-                                  isSubActive ? "scale-x-100" : "scale-x-0 group-hover/mobile:scale-x-100",
-                                )}
-                                aria-hidden="true"
-                              ></span>
-                              <span className="relative z-10">{subItem.title}</span>
-                            </Link>
-                          )
-                        })}
+                      <div className="pl-4 space-y-1">
+                        {item.submenu.map((subItem) => (
+                          <Link
+                            key={subItem.title}
+                            href={subItem.href}
+                            onClick={() => setOpen(false)}
+                            className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded"
+                          >
+                            {subItem.title}
+                          </Link>
+                        ))}
                       </div>
                     )}
-                  </div>
-                )
-              }
-
-              return (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors hover:text-ci-orange",
-                    isActive ? "text-ci-orange" : "text-foreground",
-                  )}
-                  onClick={() => setOpen(false)}
-                >
-                  {item.title}
-                </Link>
-              )
-            })}
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded"
+                  >
+                    {item.title}
+                  </Link>
+                )}
+              </div>
+            ))}
+            <div className="pt-2 border-t border-gray-100 px-4 py-3 text-sm text-gray-700">
+              <div>Email: infos@capec-ci.org</div>
+              <div>Contact: (225) 27 22 44 41 24</div>
+            </div>
           </nav>
         </div>
       )}
     </div>
   )
 }
-

@@ -1,5 +1,5 @@
-"use client";
-import { NavItem } from "./main-nav";
+"use client"
+import { NavItem } from "./main-nav"
 
 export const navItems: NavItem[] = [
   {
@@ -61,20 +61,10 @@ export const navItems: NavItem[] = [
       {
         title: "Travaux Individuels des Chercheurs",
         href: "/publication/travaux-individuels-des-chercheurs",
-      }, 
+      },
       {
         title: "Travaux de Recherche",
         href: "/publication/travaux-de-recherche",
-       /* submenu: [
-          {
-            title: "Etudes Commandités",
-            href: "/publication/travaux-de-recherche/etudes-commandites"
-          },
-          {
-            title: "Projet de Recherche",
-            href: "/publication/travaux-de-recherche/projet-de-recherche",
-          },
-        ]*/
       },
     ],
   },
@@ -122,4 +112,4 @@ export const navItems: NavItem[] = [
     title: "CHERCHEUR",
     href: "/chercheur",
   },
-];
+]

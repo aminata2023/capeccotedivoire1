@@ -14,24 +14,21 @@ import { EventCarousel } from "@/components/carousel"
 const carouselEvents = [
   {
     title: "10ème Sommet des Think Tanks d'Afrique",
-    description: "Un sommet réunissant les principaux think tanks d'Afrique pour discuter des politiques économiques.",
-    date: "15-16 mars 2023",
+    //date: "15-16 mars 2023",
     image: "/images/10esommetdesthinkstankdafriquev1.jpg", 
     learnMoreLink: "/activites/programme#event1",
     registerLink: "/activites/programme/inscription",
   },
   {
     title: "Dîner de gala pour le 30ème anniversaire de la CAPEC",
-    description: "Un événement prestigieux pour célébrer les 30 ans de la CAPEC.",
-    date: "9 octobre 2024",
+    //date: "9 octobre 2024",
     image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg",
     learnMoreLink: "/recherches/projets/economie-verte",
     registerLink: "/formations/inscription",
   },
   {
     title: "Leçon inaugurale de la CAPEC",
-    description: "Une leçon inaugurale marquant le début des activités académiques de la CAPEC.",
-    date: "8 octobre 2024",
+    //date: "8 octobre 2024",
     image: "/images/leçoninaugurale8octobre.jpg",
     learnMoreLink: "/formations/econometrie",
     registerLink: "/formations/inscription",
