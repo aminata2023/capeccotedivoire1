@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-bold mb-4">Notre Histoire</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                  Créée en 1997, la CAPEC (Cellule d'Analyse de Politiques Économiques du CIRES) a vu le 
+                  Créée en 1992, la CAPEC (Cellule d'Analyse de Politiques Économiques du CIRES) a vu le 
                   jour pour répondre au besoin de renforcer l'expertise nationale en matière d'analyse 
                   économique et d'aide à la décision publique.
                   </p>
@@ -173,15 +173,14 @@ const directionTeam = [
   {
     id: "1",
     name: "Dr. YEO Nahoua",
-    title: "Directeur de Cabinet du Ministère du Plan",
-    bio: " expert en planification, dirige le Cabinet du Ministère du Plan de Côte d’Ivoire.",
+    title: "Directeur de Cabinet de l'économie, du plan et du développement",
+    bio: " Président du comité de pilotage",
     photo: "/images/DrYEONahoua.jpg?text=Dr.+Amadou+Diallo&height=200&width=200",
   },
   {
     id: "2",
     name: "Honorable DIABAGATE MAmah",
     title: " Commission des Affaires Economiques et Financières de l’Assemblée Nationale",
-    bio: "Membre de la Commission Éco. et Finances à l’Assemblée Nationale, expert en politiques publiques.",
     photo: "/images/HonorableDIABAGATEMAmah.jpg?text=Dr.+Marie+Koné&height=200&width=200",
   },
 ]

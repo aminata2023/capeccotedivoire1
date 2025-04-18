@@ -13,29 +13,24 @@ import { EventCarousel } from "@/components/carousel"
 // Utilisation du composant
 const carouselEvents = [
   {
-    title: "Cellule d'Analyse de Politiques Économiques du CIRES",
-    description:
-      "Rejoignez-nous pour cette conférence majeure qui réunira des experts de renommée mondiale pour discuter des stratégies économiques dans l'ère post-pandémie.",
-    date: "15-16 mars 2023",
-    image: "/images/10esommetdesthinkstankdafriquevalide.jpg", 
+    title: "10ème Sommet des Think Tanks d'Afrique",
+    //date: "15-16 mars 2023", 
+    //image1
+    image: "/images/10esommetdesthinkstankdafriquev1.jpg", 
     learnMoreLink: "/activites/programme#event1",
     registerLink: "/activites/programme/inscription",
   },
   {
-    title: "Lancement du nouveau programme de recherche sur l'économie verte",
-    description:
-      "Le CAPEC lance un ambitieux programme de recherche sur l'économie verte et la transition écologique, financé par une subvention internationale.",
-    date: "20 avril 2023",
-    image: "/images/dinerdes30eanniversairedelacapec9octobre2024.jpg",
+    title: "diner de gala pour le 30ème anniversaire de la CAPEC",
+    //image2
+    image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg",
     learnMoreLink: "/recherches/projets/economie-verte",
     registerLink: "/formations/inscription",
   },
   {
-    title: "Séminaire de formation en économétrie appliquée",
-    description:
-      "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants, avec un focus sur les applications pratiques.",
-    date: "5-7 juin 2023",
-    image: "/images/leçoninaugurale8octobre20242.jpg",
+    title: "Leçon inaugurale de la CAPEC",
+    //image3
+    image: "/images/leçoninaugurale8octobre.jpg",
     learnMoreLink: "/formations/econometrie",
     registerLink: "/formations/inscription",
   },

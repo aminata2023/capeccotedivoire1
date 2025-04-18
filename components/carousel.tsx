@@ -30,20 +30,21 @@ export function EventCarousel({ events }: { events: { title: string; description
   }, [events.length]);
 
   return (
-    <div className="relative w-full" >
-  <div className="relative overflow-hidden">
+    <div className="relative w-full" style={{width:'100%', margin:'0',padding:'0'}} >
+  <div className="relative overflow-hidden" style={{height:'90vh'}} >
     {events.map((event, index) => (
-      <div
+      <div 
         key={index}
         className={`transition-transform duration-1000 ease-in-out flex-shrink-0 w-full ${index === currentIndex ? "block" : "hidden"}`}
       >
         <div className="p-1">
           <div className="overflow-hidden border-0 shadow-lg">
-            <div className="relative w-full h-screen">
-              <img
+            <div className="relative w-full h-screen" style={{width:'98%', padding: '1% 1%', overflow:'hidden'}}  >
+              <img style={{width:'100%',height:'auto', display:'block' }}
                 src={event.image || "/placeholder.svg"}
                 alt={event.title}
-                className="object-cover w-full h-full h-screen   style={{ maxWidth: '6720px', maxHeight: '4480px' }}"
+                className="object-cover w-full h-full h-screen "
+                //gestion de l'image en mode responsive
                 //className="relative w-full" 
                  //className="object-cover max-w-full max-h-[4480px] w-auto"
                  //className="object-cover w-[2048px] h-[842px]"
