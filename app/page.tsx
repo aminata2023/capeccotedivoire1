@@ -14,35 +14,28 @@ import { EventCarousel } from "@/components/carousel"
 const carouselEvents = [
   {
     title: "10ème Sommet des Think Tanks d'Afrique",
-    //date: "15-16 mars 2023", 
-    //image1
+    description: "Un sommet réunissant les principaux think tanks d'Afrique pour discuter des politiques économiques.",
+    date: "15-16 mars 2023",
     image: "/images/10esommetdesthinkstankdafriquev1.jpg", 
     learnMoreLink: "/activites/programme#event1",
     registerLink: "/activites/programme/inscription",
   },
   {
-    title: "diner de gala pour le 30ème anniversaire de la CAPEC",
-    //image2
+    title: "Dîner de gala pour le 30ème anniversaire de la CAPEC",
+    description: "Un événement prestigieux pour célébrer les 30 ans de la CAPEC.",
+    date: "9 octobre 2024",
     image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg",
     learnMoreLink: "/recherches/projets/economie-verte",
     registerLink: "/formations/inscription",
   },
   {
     title: "Leçon inaugurale de la CAPEC",
-    //image3
+    description: "Une leçon inaugurale marquant le début des activités académiques de la CAPEC.",
+    date: "8 octobre 2024",
     image: "/images/leçoninaugurale8octobre.jpg",
     learnMoreLink: "/formations/econometrie",
     registerLink: "/formations/inscription",
   },
-   /*{
-    title: "Séminaire de formation en économétrie appliquée",
-    description:
-      "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants, avec un focus sur les applications pratiques.",
-    date: "5-7 juin 2023",
-    image: "/images/leçoninaugurale8octobre20242.jpg",
-    learnMoreLink: "/formations/econometrie",
-    registerLink: "/formations/inscription",
-  },*/
 ];
 
 export default function Home() {
