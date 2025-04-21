@@ -60,16 +60,6 @@ export const navItems: NavItem[] = [
   {
     title: "PUBLICATION",
     href: "/publication",
-    submenu: [
-      {
-        title: "Travaux Individuels des Chercheurs",
-        href: "/publication/travaux-individuels-des-chercheurs",
-      },
-      {
-        title: "Travaux de Recherche",
-        href: "/publication/travaux-de-recherche",
-      },
-    ],
   },
   {
     title: "NOS REALISATIONS",
