@@ -1,279 +1,172 @@
-import Image from "next/image"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Card, CardContent } from "@/components/ui/card"
-import { FileText, Users, Calendar, BookOpen, Globe, BarChart } from "lucide-react"
+import Image from "next/image";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  FileText,
+  Users,
+  Calendar,
+  BookOpen,
+  Globe,
+  BarChart,
+} from "lucide-react";
 
 export default function NosActivitesPage() {
+  // Data for activity cards
+  const activities = [
+    {
+      icon: <FileText className="h-6 w-6 text-ci-orange" />,
+      bgColor: "bg-orange-100",
+      title: "Recherche",
+      description:
+        "Conduire des recherches de haute qualité sur les questions économiques pertinentes pour la Côte d'Ivoire et l'Afrique de l'Ouest.",
+      imageSrc:
+        "/images/Nos_activités/LIEN_ENTRE_EXTREMISME_VIOLENT_ET_ACTIVITES_ILLICITES_DANS_LA_REGION_DU_FOLON.jpeg",
+      alt: "Recherche économique",
+    },
+    {
+      icon: <Users className="h-6 w-6 text-ci-green" />,
+      bgColor: "bg-green-100",
+      title: "Formation",
+      description:
+        "Former la prochaine génération d'analystes et de chercheurs en économie à travers divers programmes éducatifs.",
+      imageSrc: "/images/Nos_activités/Formation_Agent_DGI.jpg",
+      alt: "Formation académique",
+    },
+    {
+      icon: <Calendar className="h-6 w-6 text-ci-orange" />,
+      bgColor: "bg-orange-100",
+      title: "Étude",
+      description:
+        "Fournir des conseils stratégiques aux décideurs politiques et aux parties prenantes sur les questions économiques.",
+      imageSrc: "/images/Nos_activités/Elaboration_de_la_SRMT.jpeg",
+      alt: "Conseil stratégique",
+    },
+    {
+      icon: <Globe className="h-6 w-6 text-ci-orange" />,
+      bgColor: "bg-orange-100",
+      title: "Conférences",
+      description:
+        "Organiser et participer à des conférences nationales et internationales sur les enjeux économiques.",
+      imageSrc:
+        "/images/Nos_activités/Conference JICA-JAPAN CORNER-CAPEC 22 Février 2024.jpg",
+      alt: "Conférences économiques",
+    },
+  ];
+
+  // Data for calendar events
+  const calendarEvents = [
+    {
+      title: "Conférence annuelle de la CAPEC",
+      date: "Mars 2023",
+      description:
+        "Conférence internationale sur les politiques économiques post-pandémie, réunissant des experts de renommée mondiale.",
+    },
+    {
+      title: "Séminaire de formation en économétrie",
+      date: "Juin 2023",
+      description:
+        "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants.",
+    },
+    {
+      title: "Forum sur l'intégration économique régionale",
+      date: "Septembre 2023",
+      description:
+        "Forum réunissant des acteurs économiques et politiques pour discuter des enjeux de l'intégration régionale.",
+    },
+    {
+      title: "Atelier sur les politiques d'inclusion financière",
+      date: "Novembre 2023",
+      description:
+        "Atelier réunissant des acteurs du secteur financier et des décideurs politiques pour discuter des stratégies d'inclusion financière.",
+    },
+  ];
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header />
-      <div className="container px-4 py-12 md:px-6 md:py-24 flex-grow">
-        <div className="space-y-4">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nos Activités</h1>
-          <div className="w-20 h-1 bg-ci-orange"></div>
-          <p className="text-muted-foreground md:text-xl max-w-[800px]">
-            Découvrez les principales activités du CAPEC, de la recherche à la formation en passant par le conseil et la
-            diffusion des connaissances.
+
+      {/* Hero Section */}
+      <section className="container px-4 py-12 md:px-6 md:py-24 flex-grow">
+        <div className="text-center space-y-6">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-gray-900">
+            Nos Activités
+          </h1>
+          <div className="w-24 h-1 bg-ci-orange mx-auto"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto md:text-xl">
+            Découvrez les principales activités du CAPEC, de la recherche à la
+            formation en passant par le conseil et la diffusion des connaissances.
           </p>
         </div>
 
-        <div className="grid gap-8 mt-12 md:grid-cols-2 lg:grid-cols-3">
-          
-      <Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-        <CardContent className="p-6 flex flex-col space-y-4">
-        
-        <div className="p-3 rounded-full bg-orange-100 self-center">
-          <FileText className="h-6 w-6 text-ci-orange" />
+        {/* Activities Grid */}
+        <div className="grid gap-8 mt-16 space-x-4sm:grid-cols-2 lg:grid-cols-4">
+          {activities.map((activity, index) => (
+            <Card
+              key={index}
+              className="group flex flex-col overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <CardContent className="p-6 flex flex-col items-center text-center space-y-4 flex-grow">
+                <div
+                  className={`p-3 rounded-full ${activity.bgColor} transition-transform duration-300 group-hover:scale-110`}
+                >
+                  {activity.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {activity.title}
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  {activity.description}
+                </p>
+                <div className="relative w-full h-56 mt-auto">
+                  <Image
+                    src={activity.imageSrc}
+                    alt={activity.alt}
+                    fill
+                    className="rounded-md object-cover transition-transform duration-500 group-hover:scale-105"
+                    placeholder="blur"
+                    blurDataURL="/images/placeholder.jpg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
-        <h3 className="text-xl font-bold text-center">Recherche</h3>
-
-        <p className="text-muted-foreground text-center">
-          Conduire des recherches de haute qualité sur les questions économiques pertinentes pour la Côte d'Ivoire
-          et l'Afrique de l'Ouest.
-        </p>
-
-        <ul className="text-sm text-left w-full space-y-2">
-          <li className="flex items-start">
-            <span className="text-ci-orange mr-2">•</span>
-            <span>Études macroéconomiques et sectorielles</span>
-          </li>
-          <li className="flex items-start">
-            <span className="text-ci-orange mr-2">•</span>
-            <span>Analyses des politiques publiques</span>
-          </li>
-          <li className="flex items-start">
-            <span className="text-ci-orange mr-2">•</span>
-            <span>Évaluations d'impact des programmes de développement</span>
-          </li>
-        </ul>
-          <Image
-          src="/images/33612.jpg?text=Recherche+Économique&height=150&width=300"
-          alt="Recherche économique"
-          width={300}
-          height={150}
-          className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-        />
-          </CardContent>
-      </Card> 
-      {/* section formation*/ }
-      <Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-  <CardContent className="p-6 flex flex-col space-y-4">
-    <div className="p-3 rounded-full bg-green-100 self-center">
-      <Users className="h-6 w-6 text-ci-green" />
-    </div>
-    <h3 className="text-xl font-bold text-center">Formation</h3>
-    <p className="text-muted-foreground text-center">
-      Former la prochaine génération d'analystes et de chercheurs en économie à travers divers programmes éducatifs.
-    </p>
-    <ul className="text-sm text-left w-full space-y-2">
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Séminaires de formation pour chercheurs</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Encadrement de doctorants et stagiaires</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Ateliers méthodologiques</span>
-      </li>
-    </ul>
-    <Image
-      src="/images/format.jpg?text=Formation+Académique&height=150&width=300"
-      alt="Formation académique"
-      width={300}
-      height={150}
-      className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-    />
-  </CardContent>
-</Card>
-
-<Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-  <CardContent className="p-6 flex flex-col space-y-4">
-    <div className="p-3 rounded-full bg-orange-100 self-center">
-      <Calendar className="h-6 w-6 text-ci-orange" />
-    </div>
-    <h3 className="text-xl font-bold text-center">Etude</h3>
-    <p className="text-muted-foreground text-center">
-      Fournir des conseils stratégiques aux décideurs politiques et aux parties prenantes sur les questions économiques.
-    </p>
-    <ul className="text-sm text-left w-full space-y-2">
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Assistance technique aux ministères</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Consultation pour organisations internationales</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Appui aux collectivités locales</span>
-      </li>
-    </ul>
-    <Image
-      src="/images/etudeactivite.jpg?text=Conseil+Stratégique&height=150&width=300"
-      alt="Conseil stratégique"
-      width={300}
-      height={150}
-      className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-    />
-  </CardContent>
-</Card>
-
-<Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-  <CardContent className="p-6 flex flex-col space-y-4">
-    <div className="p-3 rounded-full bg-green-100 self-center">
-      <BookOpen className="h-6 w-6 text-ci-green" />
-    </div>
-    <h3 className="text-xl font-bold text-center">Publications</h3>
-    <p className="text-muted-foreground text-center">
-      Diffuser les résultats de nos recherches à travers diverses publications académiques et grand public.
-    </p>
-    <ul className="text-sm text-left w-full space-y-2">
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Articles dans des revues scientifiques</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Rapports de recherche et notes de politique</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Bulletins d'information économique</span>
-      </li>
-    </ul>
-    <Image
-      src="/images/1232.jpg?text=Publications+Académiques&height=150&width=300"
-      alt="Publications académiques"
-      width={300}
-      height={150}
-      className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-    />
-  </CardContent>
-</Card>
-
-<Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-  <CardContent className="p-6 flex flex-col space-y-4">
-    <div className="p-3 rounded-full bg-orange-100 self-center">
-      <Globe className="h-6 w-6 text-ci-orange" />
-    </div>
-    <h3 className="text-xl font-bold text-center">Conférences</h3>
-    <p className="text-muted-foreground text-center">
-      Organiser et participer à des conférences nationales et internationales sur les enjeux économiques.
-    </p>
-    <ul className="text-sm text-left w-full space-y-2">
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Conférence annuelle du CAPEC</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Séminaires thématiques</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-orange mr-2">•</span>
-        <span>Participation à des forums internationaux</span>
-      </li>
-    </ul>
-    <Image
-      src="/images/1231.jpg?text=Conférences+Économiques&height=150&width=300"
-      alt="Conférences économiques"
-      width={300}
-      height={150}
-      className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-    />
-  </CardContent>
-</Card>
-
-<Card className="flex flex-col overflow-hidden shadow-md rounded-lg">
-  <CardContent className="p-6 flex flex-col space-y-4">
-    <div className="p-3 rounded-full bg-green-100 self-center">
-      <BarChart className="h-6 w-6 text-ci-green" />
-    </div>
-    <h3 className="text-xl font-bold text-center">Analyse de données</h3>
-    <p className="text-muted-foreground text-center">
-      Collecter, analyser et interpréter des données économiques pour informer les politiques publiques.
-    </p>
-    <ul className="text-sm text-left w-full space-y-2">
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Enquêtes et collecte de données primaires</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Modélisation économétrique</span>
-      </li>
-      <li className="flex items-start">
-        <span className="text-ci-green mr-2">•</span>
-        <span>Visualisation et interprétation des données</span>
-      </li>
-    </ul>
-    <Image
-      src="/images/1230.jpg?text=Analyse+de+Données&height=150&width=300"
-      alt="Analyse de données"
-      width={300}
-      height={150}
-      className="w-full h-auto rounded-md object-cover transform transition-transform duration-500 hover:scale-105"
-    />
-  </CardContent>
-</Card>
-
-        </div>
-
-        <div className="mt-16">
-          <h2 className="text-2xl font-bold mb-6">Calendrier des activités</h2>
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <div className="space-y-6">
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="font-bold">Conférence annuelle de la CAPEC</h3>
-                  <span className="text-ci-orange font-medium">Mars 2023</span>
+        {/* Calendar Section */}
+        <section className="mt-20">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Calendrier des Activités
+          </h2>
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="grid gap-8 md:grid-cols-2">
+              {calendarEvents.map((event, index) => (
+                <div
+                  key={index}
+                  className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                >
+                  <div className="flex-shrink-0">
+                    <Calendar className="h-6 w-6 text-ci-orange" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="font-semibold text-gray-900">
+                        {event.title}
+                      </h3>
+                      <span className="text-ci-orange font-medium text-sm">
+                        {event.date}
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-sm">{event.description}</p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground">
-                  Conférence internationale sur les politiques économiques post-pandémie, réunissant des experts de
-                  renommée mondiale.
-                </p>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="font-bold">Séminaire de formation en économétrie</h3>
-                  <span className="text-ci-orange font-medium">Juin 2023</span>
-                </div>
-                <p className="text-muted-foreground">
-                  Formation avancée sur les techniques économétriques pour les chercheurs et doctorants.
-                </p>
-              </div>
-              <div className="border-b pb-4">
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="font-bold">Forum sur l'intégration économique régionale</h3>
-                  <span className="text-ci-orange font-medium">Septembre 2023</span>
-                </div>
-                <p className="text-muted-foreground">
-                  Forum réunissant des acteurs économiques et politiques pour discuter des enjeux de l'intégration
-                  régionale.
-                </p>
-              </div>
-              <div>
-                <div className="flex justify-between items-center mb-2">
-                  <h3 className="font-bold">Atelier sur les politiques d'inclusion financière</h3>
-                  <span className="text-ci-orange font-medium">Novembre 2023</span>
-                </div>
-                <p className="text-muted-foreground">
-                  Atelier réunissant des acteurs du secteur financier et des décideurs politiques pour discuter des
-                  stratégies d'inclusion financière.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
+
       <Footer />
     </div>
-  )
+  );
 }
-

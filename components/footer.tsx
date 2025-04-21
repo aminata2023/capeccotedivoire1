@@ -37,7 +37,7 @@ export function Footer() {
                 type="submit"
                 className="bg-ci-orange text-white px-4 py-2 rounded-md hover:bg-orange-600 transition-colors"
               >
-                S’abonner
+                S'abonner
               </button>
             </form>
           </div>
