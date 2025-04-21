@@ -24,7 +24,7 @@ export default function OrganigrammePage() {
             {/* Organigramme visuel */}
             <div className="relative w-full h-[600px] mb-8 hidden md:block">
               <Image
-                src="/placeholder.svg?text=Organigramme+du+CAPEC&height=600&width=1000"
+                src="/images/organigramme_CAPEC.png"
                 alt="Organigramme du CAPEC"
                 fill
                 className="object-contain"
@@ -67,7 +67,7 @@ export default function OrganigrammePage() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardContent className="p-6">
               <h3 className="font-bold text-lg mb-4 text-ci-orange">Direction</h3>
@@ -229,36 +229,23 @@ export default function OrganigrammePage() {
               </ul>
             </CardContent>
           </Card>
-        </div>
-
-        <div className="mt-8 grid gap-8 md:grid-cols-3">
+        </div> */}
+        <div className="mt-8 grid gap-8 md:grid-cols-4">
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-bold text-lg mb-4">Équipe Macroéconomie</h3>
-              <p className="text-muted-foreground mb-4">
-                Cette équipe se concentre sur l'analyse des politiques macroéconomiques, la modélisation et les
-                prévisions économiques.
-              </p>
+              <h3 className="font-bold text-lg mb-4">ÉQUIPE DE DIRECTION</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Dr. Jean Touré (Chef d'équipe)</span>
+                  <span>Prof. AHOURE Alban A.E.</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Dr. Paul Mensah</span>
+                  <span>Prof. KIMOU Assi José Carlos</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Dr. Olivier Kouamé</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>2 Chercheurs associés</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>3 Doctorants</span>
+                  <span>Dr KRAMO Kouakou Germain</span>
                 </li>
               </ul>
             </CardContent>
@@ -266,49 +253,78 @@ export default function OrganigrammePage() {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-bold text-lg mb-4">EQUIPE DE RECHERCHE</h3>
-              <p className="text-muted-foreground mb-4">
-                Cette équipe travaille sur les questions de recherche.
-              </p>
+              <h3 className="font-bold text-lg mb-4">COMITÉ DE PILOTAGE</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
-                  <span>Prof. AHOURE Alban A.E.</span>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Dr YEO Nahoua, Directeur de Cabinet du Ministère du Plan</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
-                  <span>Prof. KIMOU Assi José Carlos</span>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Honorable DIABAGATÉ Mamah</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
-                  <span>Dr KRAMO Kouakou Germain</span>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Dr ABOUA Gustave</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>M. TRA BI Emmanuel</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Prof. BALLO ZIE</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Prof. BAMBA N’Galadjo</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>M. ADOPO Fiacre</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>M. NIANGO Guy</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Dr DIARRA Ibrahim</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6">
+              <h3 className="font-bold text-lg mb-4">ÉQUIPE DES CHERCHEURS</h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Prof. BEKE EHUITCHE TITE</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Dr TRAORE NOHOUA</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Dr BECHO ISABELLE EPSE N’DRI</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
-                  <span>Dr KOUADIO BONIFACE</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Dr KACOU KACOU YVES THIERRY</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>Dr KOUADIO BONIFACE</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Dr TOURE TALNAN</span>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <div className="w-2 h-2 rounded-full bg-ci-green"></div>
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
                   <span>Dr ASSOUM FEISSAL</span>
                 </li>
               </ul>
@@ -317,31 +333,39 @@ export default function OrganigrammePage() {
 
           <Card>
             <CardContent className="p-6">
-              <h3 className="font-bold text-lg mb-4">Équipe Politiques Sociales</h3>
-              <p className="text-muted-foreground mb-4">
-                Cette équipe se concentre sur l'analyse des politiques sociales, l'éducation, la santé et les questions
-                de genre.
-              </p>
+              <h3 className="font-bold text-lg mb-4">PERSONNEL D'APPUI</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Dr. Marie Koné (Cheffe d'équipe)</span>
+                  <span>M. NEZIT Denis</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Dr. Lucie Osei</span>
+                  <span>M. MEL Trihji Juste S</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>Prof. Sarah Johnson</span>
+                  <span>KEI Taud Miguel Emmanuella</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>2 Chercheurs associés</span>
+                  <span>KADJO Balémy Tatiana</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
-                  <span>3 Doctorants</span>
+                  <span>Mme NEUBA Augusta épse GOUEDAN</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>M. LAMOUA KOUAKOU KOUADIO AIME</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>M. BAYALA ALEXANDRE</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 rounded-full bg-ci-orange"></div>
+                  <span>YAOUA Antoinette</span>
                 </li>
               </ul>
             </CardContent>

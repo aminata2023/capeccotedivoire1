@@ -18,7 +18,7 @@ export default function ReferencesPage() {
         </div>
 
         <div className="mt-12">
-          <h2 className="text-2xl font-bold mb-8">Institutions nationales</h2>
+          <h2 className="text-2xl font-bold mb-8">Institutions gouvernementale</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {nationalInstitutions.map((institution) => (
               <ReferenceCard key={institution.id} reference={institution} />

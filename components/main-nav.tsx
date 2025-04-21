@@ -65,7 +65,7 @@ export function MainNav() {
                   href={item.href}
                   className={cn(
                     "flex items-center text-sm font-medium transition-colors hover:text-ci-orange",
-                    isActive ? "text-ci-orange" : "text-foreground",
+                    isActive ? "" : "text-foreground",
                   )}
                 >
                   {item.title}
