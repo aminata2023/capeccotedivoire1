@@ -76,8 +76,8 @@ function ResearcherCard({ researcher }: { researcher: any }) {
         {/* trait de séparation */}
         <div className="w-full h-px bg-gray-200 my-3"></div>
 
-        {/* Icônes réseaux sociaux */}
-        <div className="flex justify-center space-x-4 mb-4">
+        {/* Icônes  */}
+       {/* <div className="flex justify-center space-x-4 mb-4">
           <a href="#" className="text-gray-400 hover:text-ci-orange transition-colors">
             <FacebookIcon className="w-5 h-5" />
           </a>
@@ -90,7 +90,7 @@ function ResearcherCard({ researcher }: { researcher: any }) {
           <a href="#" className="text-gray-400 hover:text-ci-orange transition-colors">
             <MailIcon className="w-5 h-5" />
           </a>
-        </div>
+        </div>*/}
         
         {/* Icônes expertise - Version corrigée */}
         {researcher.expertise && researcher.expertise.length > 0 && (
