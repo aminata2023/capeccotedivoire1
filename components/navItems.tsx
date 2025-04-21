@@ -45,10 +45,6 @@ export const navItems: NavItem[] = [
         href: "/ressources/recherches",
       },
       {
-        title: "Publications",
-        href: "/ressources/publications",
-      },
-      {
         title: "Etudes",
         href: "/ressources/etudes",
       },
