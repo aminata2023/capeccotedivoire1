@@ -8,7 +8,7 @@ export const navItems: NavItem[] = [
   },
   {
     title: "A PROPOS",
-    href: "/a-propos",
+    href: "",
     submenu: [
       {
         title: "Mot du Directeur",
@@ -38,15 +38,11 @@ export const navItems: NavItem[] = [
   },
   {
     title: "RESSOURCES",
-    href: "/ressources",
+    href: "",
     submenu: [
       {
         title: "Recherches",
         href: "/ressources/recherches",
-      },
-      {
-        title: "Publications",
-        href: "/ressources/publications",
       },
       {
         title: "Etudes",
@@ -57,26 +53,7 @@ export const navItems: NavItem[] = [
   {
     title: "PUBLICATION",
     href: "/publication",
-    submenu: [
-      {
-        title: "Travaux Individuels des Chercheurs",
-        href: "/publication/travaux-individuels-des-chercheurs",
-      }, 
-      {
-        title: "Travaux de Recherche",
-        href: "/publication/travaux-de-recherche",
-       /* submenu: [
-          {
-            title: "Etudes Commandités",
-            href: "/publication/travaux-de-recherche/etudes-commandites"
-          },
-          {
-            title: "Projet de Recherche",
-            href: "/publication/travaux-de-recherche/projet-de-recherche",
-          },
-        ]*/
-      },
-    ],
+    
   },
   {
     title: "NOS REALISATIONS",

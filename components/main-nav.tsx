@@ -5,9 +5,20 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown } from 'lucide-react'
 import { title } from "process"
 import { navItems } from "./navItems"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+
+
 
 export type NavItem = {
   title: string
@@ -21,15 +32,18 @@ export function MainNav() {
   const [hoverItem, setHoverItem] = useState<string | null>(null)
 
   return (
-    <div className="flex items-center">
+  <>
+     
+
+     <div className="flex items-center">
       <Link href="/" className="flex items-center space-x-2 mr-6">
-        <div className="relative w-10 h-10 bg-white rounded-sm flex items-center justify-center overflow-hidden">
+        <div className="relative w-25 h-25 bg-white rounded-sm flex items-center justify-center overflow-hidden">
           <Image
             src={"/images/logocapec.png"}
            // src="/placeholder.svg?text=CAPEC&height=32&width=32&fontsize=10&bgcolor=FFFFFF"
             alt="CAPEC Logo"
-            width={32}
-            height={32}
+            width={68}
+            height={68}
             className="object-contain"
           />
         </div>
@@ -82,7 +96,7 @@ export function MainNav() {
                             {/* Overlay d'animation pour l'effet de survol */}
                             <span
                               className={cn(
-                                "absolute inset-0 bg-ci-green transform origin-left transition-transform duration-300 ease-out",
+                                "absolute mt-2 inset-0 bg-ci-green transform origin-left transition-transform duration-300 ease-out",
                                 isSubActive ? "scale-x-100" : "scale-x-0 group-hover/item:scale-x-100",
                               )}
                               aria-hidden="true"
@@ -118,6 +132,12 @@ export function MainNav() {
         <MobileNav />
       </div>
     </div>
+
+
+  </>
+      
+
+    
   )
 }
 

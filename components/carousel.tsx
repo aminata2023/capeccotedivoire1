@@ -31,12 +31,11 @@ export function EventCarousel({ events }: { events: { title: string; description
 
   return (
     <div className="relative w-full" >
-  <div className="relative overflow-hidden">
+  <div className="relative overflow-hidden p-4">
     {events.map((event, index) => (
       <div
         key={index}
-        className={`transition-transform duration-1000 ease-in-out flex-shrink-0 w-full ${index === currentIndex ? "block" : "hidden"}`}
-      >
+        className={`transition-transform duration-1000 ease-in-out h-[590px] flex-shrink-0 w-full ${index === currentIndex ? "block" : "hidden"}`}>
         <div className="p-1">
           <div className="overflow-hidden border-0 shadow-lg">
             <div className="relative w-full h-screen">
