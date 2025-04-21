@@ -1,6 +1,13 @@
 "use client"
-import { NavItem } from "./main-nav"
 
+// Définissez et exportez le type NavItem dans ce fichier
+export type NavItem = {
+  title: string
+  href: string
+  submenu?: NavItem[]  // sous-menu optionnel
+}
+
+// Exportez ensuite vos données
 export const navItems: NavItem[] = [
   {
     title: "ACCUEIL",
