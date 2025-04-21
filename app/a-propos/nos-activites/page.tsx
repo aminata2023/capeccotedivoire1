@@ -58,25 +58,25 @@ export default function NosActivitesPage() {
   const calendarEvents = [
     {
       title: "Conférence annuelle de la CAPEC",
-      date: "Mars 2023",
+      date: "Mars 2025",
       description:
         "Conférence internationale sur les politiques économiques post-pandémie, réunissant des experts de renommée mondiale.",
     },
     {
       title: "Séminaire de formation en économétrie",
-      date: "Juin 2023",
+      date: "Juin 2025",
       description:
         "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants.",
     },
     {
       title: "Forum sur l'intégration économique régionale",
-      date: "Septembre 2023",
+      date: "Septembre 2025",
       description:
         "Forum réunissant des acteurs économiques et politiques pour discuter des enjeux de l'intégration régionale.",
     },
     {
       title: "Atelier sur les politiques d'inclusion financière",
-      date: "Novembre 2023",
+      date: "Novembre 2025",
       description:
         "Atelier réunissant des acteurs du secteur financier et des décideurs politiques pour discuter des stratégies d'inclusion financière.",
     },

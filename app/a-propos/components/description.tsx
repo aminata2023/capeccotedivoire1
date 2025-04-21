@@ -2,7 +2,7 @@
 "use client";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-// import Description from "@/components/Description"; // Assurez-vous que ce chemin est correct
+ // Assurez-vous que ce chemin est correct
 
 export default function DescriptionPage() {
   return (
@@ -18,7 +18,7 @@ export default function DescriptionPage() {
           </p>
         </div>
         <div className="mt-6">
-          {/* <Description /> */}
+         
         </div>
       </div>
       <Footer />
