@@ -53,25 +53,25 @@ const nationalInstitutions = [
     id: "ni1",
     name: "Bureau national d'études techniques et de développement",
     type: "Institution gouvernementale",
-    logo: "/images/partenaire_de_la_CAPEC/LOGO BNETD.jpg",
+    logo: "/images/partenairecapec/logobent.jpg",
   },
   {
     id: "ni2",
     name: "Université Felix Houphouet Boigny",
     type: "Institution gouvernementale",
-    logo: "/images/partenaire_de_la_CAPEC/LOGO UNIVERSITE.jpg",
+    logo: "/images/partenairecapec/logouniv.jpg",
   },
   {
     id: "ni3",
     name: "Centre Ivoirien Recherches Economiques",
     type: "Institution Nationale",
-    logo: "/images/partenaire_de_la_CAPEC/LOGO CIRES.jpg",
+    logo: "/images/partenairecapec/logocires.jpg",
   },
   {
     id: "ni4",
     name: " Fondation pour le renforcement des capacités en Afrique",
     type: "organisation internationale indépendante",
-    logo: "/images/partenaire_de_la_CAPEC/ACBF logo.png",
+    logo: "/images/partenairecapec/acbflogo.png",
   },
 
 

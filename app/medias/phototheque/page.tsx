@@ -243,21 +243,21 @@ const conferencesPhotos = [
     title: "Conférence annuelle du CAPEC 2023",
     date: "15 mars 2023",
     description: "Conférence internationale sur les politiques économiques post-pandémie organisée par le CAPEC.",
-    src: "/images/estherubo.jpg?text=Conférence+Annuelle+2023&height=600&width=600",
+    src: "/images/estherubo.jpg",
   },
   {
     id: "conf2",
     title: "Forum économique régional",
     date: "10 novembre 2022",
     description: "Forum sur l'intégration économique régionale avec la participation de plusieurs pays africains.",
-    src: "/images/leçoninaugurale8octobre.jpg?text=Forum+Économique+Régional&height=600&width=600",
+    src: "/images/leçoninaugurale8octobre.jpg",
   },
   {
     id: "conf3",
     title: "Conférence sur le développement durable",
     date: "5 juin 2022",
     description: "Conférence sur les politiques économiques favorisant un développement durable en Afrique de l'Ouest.",
-    src: "/images/paneldehautniveau.jpg?text=Conférence+Développement+Durable&height=600&width=600",
+    src: "/images/paneldehautniveau.jpg",
   },
   {
     id: "conf4",
@@ -265,7 +265,7 @@ const conferencesPhotos = [
     date: "20 avril 2022",
     description:
       "Symposium international sur les défis et opportunités de l'économie numérique pour les pays en développement.",
-    src: "/images/panelhautniveau6.jpg?text=Symposium+Économie+Numérique&height=600&width=600",
+    src: "/images/panelhautniveau6.jpg",
   },
 ]
 
@@ -276,21 +276,21 @@ const seminairesPhotos = [
     date: "25 février 2023",
     description:
       "Séminaire d'experts sur l'optimisation des politiques fiscales pour stimuler la croissance économique.",
-    src: "/images/paneldehautniveau5.jpg?text=Séminaire+Politiques+Fiscales&height=600&width=600",
+    src: "/images/paneldehautniveau5.jpg",
   },
   {
     id: "sem2",
     title: "Atelier sur l'analyse des données économiques",
     date: "12 janvier 2023",
     description: "Atelier de formation sur les méthodes avancées d'analyse des données économiques.",
-    src: "/images/paneldehautniveau4.jpg?text=Atelier+Analyse+Données&height=600&width=600",
+    src: "/images/paneldehautniveau4.jpg",
   },
   {
     id: "sem3",
     title: "Séminaire sur l'économie verte",
     date: "8 décembre 2022",
     description: "Séminaire sur les stratégies économiques pour une transition écologique réussie.",
-    src: "/images/paneldehautiveau3.jpg?text=Séminaire+Économie+Verte&height=600&width=600",
+    src: "/images/paneldehautiveau3.jpg",
   },
   {
     id: "sem4",
@@ -298,7 +298,7 @@ const seminairesPhotos = [
     date: "15 octobre 2022",
     description:
       "Table ronde réunissant des acteurs du secteur financier pour discuter des stratégies d'inclusion financière.",
-    src: "/images/paneldehautniveau2.jpg?text=Table+Ronde+Inclusion+Financière&height=600&width=600",
+    src: "/images/paneldehautniveau2.jpg",
   },
 ]
 
@@ -308,28 +308,28 @@ const formationsPhotos = [
     title: "Formation en modélisation économétrique",
     date: "5 mars 2023",
     description: "Formation avancée sur les techniques de modélisation économétrique pour les chercheurs.",
-    src: "/images/paneldeauniveaus2.jpg?text=Formation+Économétrie&height=600&width=600",
+    src: "/images/paneldeauniveaus2.jpg",
   },
   {
     id: "form2",
     title: "Atelier sur l'évaluation des politiques publiques",
     date: "18 janvier 2023",
     description: "Atelier pratique sur les méthodes d'évaluation d'impact des politiques publiques.",
-    src: "/images/10esommetdesthinkstankdafriquev1.jpg?text=Atelier+Évaluation+Politiques&height=600&width=600",
+    src: "/images/10esommetdesthinkstankdafriquev1.jpg",
   },
   {
     id: "form3",
     title: "Formation en analyse macroéconomique",
     date: "10 novembre 2022",
     description: "Formation destinée aux analystes économiques sur les outils de prévision macroéconomique.",
-    src: "/images/paneldehautniveau2.jpg?text=Formation+Macroéconomie&height=600&width=600",
+    src: "/images/paneldehautniveau2.jpg",
   },
   {
     id: "form4",
     title: "Séminaire doctoral",
     date: "5 septembre 2022",
     description: "Séminaire de formation pour les doctorants en économie sur les méthodologies de recherche.",
-    src: "/images/leçoninaugurale8octobre20242.jpg?text=Séminaire+Doctoral&height=600&width=600",
+    src: "/images/leçoninaugurale8octobre20242.jpg",
   },
 ]
 
@@ -339,21 +339,21 @@ const equipesPhotos = [
     title: "Équipe de direction du CAPEC",
     date: "15 janvier 2023",
     description: "Photo officielle de l'équipe de direction du CAPEC lors de la cérémonie des vœux.",
-    src: "/images/introduction.jpg?text=Équipe+Direction+CAPEC&height=600&width=600",
+    src: "/images/introduction.jpg",
   },
   {
     id: "eq2",
     title: "Équipe de recherche en économie du développement",
     date: "10 décembre 2022",
     description: "L'équipe de chercheurs spécialisés en économie du développement lors d'une réunion de travail.",
-    src: "/images/dgcapec.jpg?text=Équipe+Recherche+Développement&height=600&width=600",
+    src: "/images/dgcapec.jpg?",
   },
   {
     id: "eq3",
     title: "Personnel administratif",
     date: "5 novembre 2022",
     description: "L'équipe administrative du CAPEC qui assure le bon fonctionnement quotidien du centre.",
-    src: "/images/dinerdes30eanniversairedelacapec9octobre20242.jpg?text=Personnel+Administratif&height=600&width=600",
+    src: "/images/dinerdes30eanniversairedelacapec9octobre20242.jpg?t",
   },
   {
     id: "eq4",
