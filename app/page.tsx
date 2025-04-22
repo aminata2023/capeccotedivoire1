@@ -466,6 +466,6 @@ const recentNews = [
     excerpt:
       "Le CAPEC est fier d'annoncer un nouveau partenariat de recherche avec l'Université de Paris-Saclay pour étudier les impacts économiques du changement climatique.",
     date: "9 octobre 2024",
-    image: "/images/dinerdes30eanniversairedelacapec9octobre2024.jpg?text=Partenariat+Universitaire&height=340&width=600",
+    image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg?text=Partenariat+Universitaire&height=340&width=600",
   },
 ]
