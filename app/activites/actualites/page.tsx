@@ -24,7 +24,7 @@ export default function NewsPage() {
             <div className="grid md:grid-cols-2">
               <div className="relative aspect-video md:aspect-auto">
                 <Image
-                  src="/placeholder.svg?text=Conférence+Internationale+CAPEC&height=500&width=800"
+                  src="/placeholder.svg"
                   alt={featuredNews.title}
                   fill
                   className="object-cover"
@@ -140,7 +140,7 @@ const newsList = [
     excerpt:
       "Le CAPEC est fier d'annoncer un nouveau partenariat de recherche avec l'Université de Paris-Saclay pour étudier les impacts économiques du changement climatique.",
     date: "5 février 2023",
-    image: "/placeholder.svg?text=Partenariat+Université+Paris-Saclay&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "3",
@@ -148,7 +148,7 @@ const newsList = [
     excerpt:
       "Le CAPEC vient de publier son rapport annuel analysant les tendances économiques de l'année écoulée et présentant des perspectives pour l'année à venir.",
     date: "20 janvier 2023",
-    image: "/placeholder.svg?text=Rapport+Annuel+Économie&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "4",
@@ -156,7 +156,7 @@ const newsList = [
     excerpt:
       "Le CAPEC organise un séminaire de formation de trois jours sur les méthodes avancées d'analyse des données économiques à destination des chercheurs et analystes.",
     date: "10 janvier 2023",
-    image: "/placeholder.svg?text=Séminaire+Analyse+Données&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "5",
@@ -164,7 +164,7 @@ const newsList = [
     excerpt:
       "Dans le cadre de son expansion, le CAPEC lance une campagne de recrutement pour intégrer de nouveaux chercheurs spécialisés en économie du développement et en économie environnementale.",
     date: "15 décembre 2022",
-    image: "/placeholder.svg?text=Recrutement+Chercheurs&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "6",
@@ -172,7 +172,7 @@ const newsList = [
     excerpt:
       "Une délégation du CAPEC a participé au Forum Économique Mondial où elle a présenté ses travaux sur les stratégies de développement inclusif.",
     date: "5 décembre 2022",
-    image: "/placeholder.svg?text=Forum+Économique+Mondial&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "7",
@@ -180,7 +180,7 @@ const newsList = [
     excerpt:
       "Le CAPEC lance un ambitieux programme de recherche sur l'économie verte et la transition écologique, financé par une subvention internationale.",
     date: "20 novembre 2022",
-    image: "/placeholder.svg?text=Programme+Économie+Verte&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "8",
@@ -188,7 +188,7 @@ const newsList = [
     excerpt:
       "Le CAPEC a organisé un atelier réunissant des acteurs du secteur financier et des décideurs politiques pour discuter des stratégies d'inclusion financière.",
     date: "10 novembre 2022",
-    image: "/placeholder.svg?text=Atelier+Inclusion+Financière&height=340&width=600",
+    image: "/placeholder.svg",
   },
   {
     id: "9",
@@ -196,7 +196,7 @@ const newsList = [
     excerpt:
       "Une délégation de la Banque Mondiale a visité le CAPEC pour discuter de collaborations potentielles sur des projets de développement économique.",
     date: "25 octobre 2022",
-    image: "/placeholder.svg?text=Délégation+Banque+Mondiale&height=340&width=600",
+    image: "/placeholder.svg",
   },
 ]
 

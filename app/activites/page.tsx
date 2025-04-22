@@ -23,7 +23,7 @@ export default function ActivitesPage() {
         {/* Banner Image */}
         <div className="mt-8 relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?text=Activités+du+CAPEC&height=300&width=1200"
+            src="/placeholder.svg"
             alt="Activités du CAPEC"
             width={1200}
             height={300}
@@ -153,7 +153,7 @@ const upcomingEvents = [
       "Le CAPEC organise une conférence internationale réunissant des experts de renommée mondiale pour discuter des stratégies économiques dans l'ère post-pandémie.",
     date: "15-16 mars 2023",
     location: "Hôtel Ivoire, Abidjan",
-    image: "/placeholder.svg?text=Conférence+Internationale&height=300&width=500",
+    image: "/placeholder.svg",
   },
   {
     id: "event2",
@@ -162,7 +162,7 @@ const upcomingEvents = [
       "Formation avancée sur les techniques économétriques pour les chercheurs et doctorants, avec un focus sur les applications pratiques.",
     date: "5-7 juin 2023",
     location: "Campus UFHB, Cocody",
-    image: "/placeholder.svg?text=Séminaire+Économétrie&height=300&width=500",
+    image: "/placeholder.svg",
   },
 ]
 

@@ -199,7 +199,7 @@ const interviews = [
     speaker: "Dr. Amadou Diallo, Directeur du CAPEC",
     media: "RTI (Radio Télévision Ivoirienne)",
     type: "video",
-    image: "/placeholder.svg?text=Interview+COVID&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "int2",
@@ -210,7 +210,7 @@ const interviews = [
     speaker: "Dr. Marie Koné, Directrice Adjointe du CAPEC",
     media: "Radio France Internationale (RFI)",
     type: "audio",
-    image: "/placeholder.svg?text=Interview+Inflation&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "int3",
@@ -221,7 +221,7 @@ const interviews = [
     speaker: "Dr. Jean Touré, Chercheur Senior au CAPEC",
     media: "Jeune Afrique",
     type: "video",
-    image: "/placeholder.svg?text=Interview+Intégration&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -235,7 +235,7 @@ const debats = [
     participants:
       "Dr. Amadou Diallo (CAPEC), Prof. Konan Kouassi (Université FHB), M. Traoré Bakary (Ministère des Finances)",
     organizer: "RTI",
-    image: "/placeholder.svg?text=Débat+Politiques+Fiscales&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "deb2",
@@ -245,7 +245,7 @@ const debats = [
     date: "15 mars 2023",
     participants: "Dr. Fatou Sow (CAPEC), Dr. Ouattara Ibrahim (CNRA), Mme Bamba Aminata (Ministère de l'Agriculture)",
     organizer: "Africa 24",
-    image: "/placeholder.svg?text=Débat+Agriculture+Climat&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "deb3",
@@ -255,7 +255,7 @@ const debats = [
     date: "10 février 2023",
     participants: "Dr. Paul Mensah (CAPEC), M. Koné Seydou (BCEAO), Mme Diallo Fatoumata (Microfinance)",
     organizer: "Business 24",
-    image: "/placeholder.svg?text=Table+Ronde+Inclusion+Financière&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -268,7 +268,7 @@ const questions = [
     expert: {
       name: "Dr. Amadou Diallo",
       title: "Directeur du CAPEC",
-      photo: "/placeholder.svg?text=AD&height=100&width=100",
+      photo: "/placeholder.svg",
     },
   },
   {
@@ -279,7 +279,7 @@ const questions = [
     expert: {
       name: "Dr. Marie Koné",
       title: "Directrice Adjointe du CAPEC",
-      photo: "/placeholder.svg?text=MK&height=100&width=100",
+      photo: "/placeholder.svg",
     },
   },
   {
@@ -290,7 +290,7 @@ const questions = [
     expert: {
       name: "Dr. Jean Touré",
       title: "Chercheur Senior au CAPEC",
-      photo: "/placeholder.svg?text=JT&height=100&width=100",
+      photo: "/placeholder.svg",
     },
   },
 ]

@@ -127,7 +127,7 @@ const conferences = [
     location: "Hôtel Ivoire, Abidjan",
     participants: "150 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Conférence+Internationale&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "conf2",
@@ -138,7 +138,7 @@ const conferences = [
     location: "Centre de Conférences, Plateau",
     participants: "120 participants",
     organizer: "CAPEC, PNUD",
-    image: "/placeholder.svg?text=Conférence+Développement+Durable&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "conf3",
@@ -149,7 +149,7 @@ const conferences = [
     location: "Université Félix Houphouët-Boigny",
     participants: "200 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Conférence+Annuelle+2022&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -163,7 +163,7 @@ const seminaires = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "50 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Séminaire+Politiques+Fiscales&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "sem2",
@@ -174,7 +174,7 @@ const seminaires = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "30 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Séminaire+Doctoral&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "sem3",
@@ -185,7 +185,7 @@ const seminaires = [
     location: "Ministère de l'Agriculture, Plateau",
     participants: "45 participants",
     organizer: "CAPEC, Ministère de l'Agriculture",
-    image: "/placeholder.svg?text=Séminaire+Économie+Agricole&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -199,7 +199,7 @@ const ateliers = [
     location: "Laboratoire informatique, CAPEC",
     participants: "25 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Atelier+Analyse+Données&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "at2",
@@ -210,7 +210,7 @@ const ateliers = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "35 participants",
     organizer: "CAPEC, Banque Mondiale",
-    image: "/placeholder.svg?text=Atelier+Évaluation+Impact&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "at3",
@@ -221,7 +221,7 @@ const ateliers = [
     location: "Hôtel Pullman, Abidjan",
     participants: "40 participants",
     organizer: "CAPEC, BCEAO",
-    image: "/placeholder.svg?text=Atelier+Inclusion+Financière&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -235,7 +235,7 @@ const reunions = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "15 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Réunion+Comité+Scientifique&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "reu2",
@@ -246,7 +246,7 @@ const reunions = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "20 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Réunion+Planification+Stratégique&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "reu3",
@@ -256,7 +256,7 @@ const reunions = [
     location: "CAPEC, Université Félix Houphouët-Boigny",
     participants: "25 participants",
     organizer: "CAPEC",
-    image: "/placeholder.svg?text=Réunion+Coordination+Projets&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 

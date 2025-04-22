@@ -133,7 +133,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2022.",
     year: "2022",
     pages: 48,
-    cover: "/placeholder.svg?text=Rapport+2022&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "ar2",
@@ -141,7 +141,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2021.",
     year: "2021",
     pages: 52,
-    cover: "/placeholder.svg?text=Rapport+2021&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "ar3",
@@ -149,7 +149,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2020.",
     year: "2020",
     pages: 45,
-    cover: "/placeholder.svg?text=Rapport+2020&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "ar4",
@@ -157,7 +157,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2019.",
     year: "2019",
     pages: 50,
-    cover: "/placeholder.svg?text=Rapport+2019&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "ar5",
@@ -165,7 +165,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2018.",
     year: "2018",
     pages: 46,
-    cover: "/placeholder.svg?text=Rapport+2018&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "ar6",
@@ -173,7 +173,7 @@ const annualReports = [
     description: "Synthèse des activités, projets et réalisations du CAPEC pour l'année 2017.",
     year: "2017",
     pages: 42,
-    cover: "/placeholder.svg?text=Rapport+2017&height=300&width=400",
+    cover: "/placeholder.svg",
   },
 ]
 
@@ -184,7 +184,7 @@ const thematicReports = [
     description: "Synthèse des projets de recherche menés par le CAPEC et leurs résultats.",
     year: "2022",
     pages: 36,
-    cover: "/placeholder.svg?text=Recherche+2022&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "tr2",
@@ -192,7 +192,7 @@ const thematicReports = [
     description: "Présentation des programmes de formation et de renforcement des capacités.",
     year: "2022",
     pages: 28,
-    cover: "/placeholder.svg?text=Formation+2022&height=300&width=400",
+    cover: "/placeholder.svg",
   },
   {
     id: "tr3",
@@ -200,7 +200,7 @@ const thematicReports = [
     description: "Aperçu des partenariats nationaux et internationaux du CAPEC.",
     year: "2022",
     pages: 32,
-    cover: "/placeholder.svg?text=Partenariats+2022&height=300&width=400",
+    cover: "/placeholder.svg",
   },
 ]
 
@@ -212,7 +212,7 @@ const projectReports = [
       "Rapport final du projet d'évaluation des politiques d'inclusion financière en zones rurales, mené en collaboration avec la Banque Mondiale.",
     date: "Décembre 2022",
     partners: "Banque Mondiale, Ministère de l'Économie et des Finances",
-    image: "/placeholder.svg?text=Inclusion+Financière&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "pr2",
@@ -221,7 +221,7 @@ const projectReports = [
       "Rapport du projet d'analyse des chaînes de valeur agricoles et leur contribution à la croissance économique en Côte d'Ivoire.",
     date: "Octobre 2022",
     partners: "FAO, Ministère de l'Agriculture",
-    image: "/placeholder.svg?text=Chaînes+Valeur+Agricoles&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "pr3",

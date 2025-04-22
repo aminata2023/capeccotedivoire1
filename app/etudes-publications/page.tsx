@@ -41,7 +41,7 @@ export default function PublicationsPage() {
       {/* Banner Image */}
       <div className="mt-8 relative rounded-lg overflow-hidden">
         <Image
-          src="/placeholder.svg?text=Centre+de+Documentation+du+CAPEC&height=300&width=1200"
+          src="/placeholder.svg"
           alt="Centre de documentation du CAPEC"
           width={1200}
           height={300}
@@ -173,7 +173,7 @@ const publications = [
       "Cette étude analyse l'impact des différentes politiques fiscales sur la croissance économique à long terme et propose des recommandations pour optimiser le système fiscal.",
     date: "15 février 2023",
     category: "etude",
-    coverImage: "/placeholder.svg?text=Politiques+Fiscales&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "2",
@@ -182,7 +182,7 @@ const publications = [
       "Une étude approfondie des dynamiques du marché du travail et des facteurs contribuant aux inégalités salariales dans différents secteurs économiques.",
     date: "10 janvier 2023",
     category: "rapport",
-    coverImage: "/placeholder.svg?text=Marché+du+Travail&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "3",
@@ -191,7 +191,7 @@ const publications = [
       "Cette publication examine l'efficacité des politiques de développement durable et propose des recommandations pour améliorer leur mise en œuvre et leur impact environnemental et social.",
     date: "5 décembre 2022",
     category: "policy-brief",
-    coverImage: "/placeholder.svg?text=Développement+Durable&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "4",
@@ -200,7 +200,7 @@ const publications = [
       "Ce rapport analyse les bénéfices économiques et sociaux de la transformation numérique des services publics et identifie les obstacles à surmonter.",
     date: "20 octobre 2022",
     category: "rapport",
-    coverImage: "/placeholder.svg?text=Digitalisation+Services+Publics&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "5",
@@ -209,7 +209,7 @@ const publications = [
       "Une analyse des effets des politiques monétaires sur la stabilité des prix et la croissance économique dans un contexte d'incertitude globale.",
     date: "15 septembre 2022",
     category: "article",
-    coverImage: "/placeholder.svg?text=Politiques+Monétaires&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "6",
@@ -218,7 +218,7 @@ const publications = [
       "Cette étude examine les différentes approches pour améliorer l'accès aux services financiers dans les zones rurales et leur impact sur le développement local.",
     date: "5 août 2022",
     category: "etude",
-    coverImage: "/placeholder.svg?text=Inclusion+Financière+Rurale&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "7",
@@ -227,7 +227,7 @@ const publications = [
       "Ce rapport compare l'efficacité des différents modèles de protection sociale et leur adaptabilité aux contextes socio-économiques variés.",
     date: "10 juillet 2022",
     category: "rapport",
-    coverImage: "/placeholder.svg?text=Protection+Sociale&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "8",
@@ -236,7 +236,7 @@ const publications = [
       "Cette note de politique analyse les conséquences économiques du changement climatique sur le secteur agricole et propose des mesures d'adaptation.",
     date: "15 juin 2022",
     category: "policy-brief",
-    coverImage: "/placeholder.svg?text=Climat+et+Agriculture&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "9",
@@ -245,7 +245,7 @@ const publications = [
       "Une étude sur l'adéquation entre les systèmes éducatifs actuels et les besoins en compétences des économies en transformation rapide.",
     date: "20 mai 2022",
     category: "etude",
-    coverImage: "/placeholder.svg?text=Éducation+et+Compétences&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "10",
@@ -254,7 +254,7 @@ const publications = [
       "Ce rapport examine les tendances des échanges commerciaux régionaux et identifie les opportunités pour renforcer l'intégration économique.",
     date: "10 avril 2022",
     category: "article",
-    coverImage: "/placeholder.svg?text=Commerce+Régional&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "11",
@@ -263,7 +263,7 @@ const publications = [
       "Cette étude analyse les effets des investissements directs étrangers sur la croissance économique, l'emploi et le transfert de technologies.",
     date: "15 mars 2022",
     category: "etude",
-    coverImage: "/placeholder.svg?text=Investissements+Étrangers&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
   {
     id: "12",
@@ -272,7 +272,7 @@ const publications = [
       "Un examen des politiques d'innovation et leur rôle dans le renforcement de la compétitivité économique nationale et internationale.",
     date: "20 février 2022",
     category: "policy-brief",
-    coverImage: "/placeholder.svg?text=Innovation+et+Compétitivité&height=340&width=600",
+    coverImage: "/placeholder.svg",
   },
 ]
 

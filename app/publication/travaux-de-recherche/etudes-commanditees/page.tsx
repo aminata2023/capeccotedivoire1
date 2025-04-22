@@ -36,7 +36,7 @@ export default function EtudesCommanditeesPage() {
         {/* Banner Image */}
         <div className="mt-8 relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?text=Études+Commanditées+CAPEC&height=300&width=1200"
+            src="/placeholder.svg"
             alt="Études Commanditées CAPEC"
             width={1200}
             height={300}
@@ -173,7 +173,7 @@ export default function EtudesCommanditeesPage() {
                 <div className="flex items-start space-x-4">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                     <Image
-                      src="/placeholder.svg?text=JD&height=64&width=64"
+                      src="/placeholder.svg"
                       alt="Jean Dupont"
                       fill
                       className="object-cover"
@@ -195,7 +195,7 @@ export default function EtudesCommanditeesPage() {
                 <div className="flex items-start space-x-4">
                   <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
                     <Image
-                      src="/placeholder.svg?text=SK&height=64&width=64"
+                      src="/placeholder.svg"
                       alt="Sarah Konaté"
                       fill
                       className="object-cover"
@@ -231,7 +231,7 @@ const etudesCommanditees = [
     commanditaire: "Banque Mondiale",
     periode: "2021-2022",
     domaine: "Finance",
-    image: "/placeholder.svg?text=Inclusion+Financière&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "2",
@@ -242,7 +242,7 @@ const etudesCommanditees = [
     commanditaire: "FAO",
     periode: "2020-2022",
     domaine: "Agriculture",
-    image: "/placeholder.svg?text=Chaînes+Valeur+Agricoles&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "3",
@@ -253,7 +253,7 @@ const etudesCommanditees = [
     commanditaire: "PNUD",
     periode: "2021-2022",
     domaine: "Numérique",
-    image: "/placeholder.svg?text=Digitalisation+Services&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "4",
@@ -264,7 +264,7 @@ const etudesCommanditees = [
     commanditaire: "OIT, UNICEF",
     periode: "2020-2022",
     domaine: "Protection sociale",
-    image: "/placeholder.svg?text=Protection+Sociale&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "5",
@@ -275,34 +275,34 @@ const etudesCommanditees = [
     commanditaire: "Union Européenne",
     periode: "2020-2022",
     domaine: "Commerce",
-    image: "/placeholder.svg?text=Intégration+Régionale&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
 const partners = [
   {
     name: "Banque Mondiale",
-    logo: "/placeholder.svg?text=BM&height=100&width=100",
+    logo: "/placeholder.svg",
   },
   {
     name: "PNUD",
-    logo: "/placeholder.svg?text=PNUD&height=100&width=100",
+    logo: "/placeholder.svg",
   },
   {
     name: "FAO",
-    logo: "/placeholder.svg?text=FAO&height=100&width=100",
+    logo: "/placeholder.svg",
   },
   {
     name: "Union Européenne",
-    logo: "/placeholder.svg?text=UE&height=100&width=100",
+    logo: "/placeholder.svg",
   },
   {
     name: "Ministère de l'Économie",
-    logo: "/placeholder.svg?text=ME&height=100&width=100",
+    logo: "/placeholder.svg",
   },
   {
     name: "BCEAO",
-    logo: "/placeholder.svg?text=BCEAO&height=100&width=100",
+    logo: "/placeholder.svg",
   },
 ]
 

@@ -346,21 +346,21 @@ const equipesPhotos = [
     title: "Équipe de recherche en économie du développement",
     date: "10 décembre 2022",
     description: "L'équipe de chercheurs spécialisés en économie du développement lors d'une réunion de travail.",
-    src: "/images/dgcapec.jpg?",
+    src: "/images/dgcapec.jpg",
   },
   {
     id: "eq3",
     title: "Personnel administratif",
     date: "5 novembre 2022",
     description: "L'équipe administrative du CAPEC qui assure le bon fonctionnement quotidien du centre.",
-    src: "/images/dinerdes30eanniversairedelacapec9octobre20242.jpg?t",
+    src: "/images/dinerdes30eanniversairedelacapec9octobre20242.jpg",
   },
   {
     id: "eq4",
     title: "Chercheurs et doctorants",
     date: "20 octobre 2022",
     description: "Groupe de chercheurs permanents et doctorants associés au CAPEC.", 
-    src: "/images/leçoninauguraledu30eanniversairedelacapecfaiteparmahoutouemmanuelkoffi1.jpg?text=Chercheurs+et+Doctorants&height=600&width=600",
+    src: "/images/leçoninauguraledu30eanniversairedelacapecfaiteparmahoutouemmanuelkoffi1.jpg",
   },
 ]
 

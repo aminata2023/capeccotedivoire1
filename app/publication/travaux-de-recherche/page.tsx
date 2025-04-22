@@ -30,7 +30,7 @@ export default function TravauxRecherchePage() {
         {/* Banner Image */}
         <div className="mt-8 relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?text=Travaux+de+Recherche+du+CAPEC&height=300&width=1200"
+            src="/placeholder.svg"
             alt="Travaux de Recherche du CAPEC"
             width={1200}
             height={300}
@@ -51,7 +51,7 @@ export default function TravauxRecherchePage() {
           <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
             <div className="relative aspect-video w-full">
               <Image
-                src="/placeholder.svg?text=Études+Commanditées&height=300&width=600"
+                src="/placeholder.svg"
                 alt="Études Commanditées"
                 width={600}
                 height={300}
@@ -83,7 +83,7 @@ export default function TravauxRecherchePage() {
           <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
             <div className="relative aspect-video w-full">
               <Image
-                src="/placeholder.svg?text=Projets+de+Recherche&height=300&width=600"
+                src="/placeholder.svg"
                 alt="Projets de Recherche"
                 width={600}
                 height={300}

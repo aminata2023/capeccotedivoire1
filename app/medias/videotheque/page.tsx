@@ -138,7 +138,7 @@ const conferencesVideos = [
     title: "Conférence annuelle du CAPEC 2023 - Session d'ouverture",
     date: "15 mars 2023",
     description: "Discours d'ouverture de la conférence internationale sur les politiques économiques post-pandémie.",
-    thumbnail: "/images/japanconferencecapec.jpg?text=Panel+Intégration+Économique&height=360&width=640",
+    thumbnail: "/images/japanconferencecapec.jpg",
     videoUrl: "/videos/1ceremoniedouverturepartie4.mp4"
   },
 ]

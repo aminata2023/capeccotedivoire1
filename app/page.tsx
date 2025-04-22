@@ -89,7 +89,7 @@ export default function Home() {
                 à fort impact développemental.
                 </p>
                 <Image
-                  src="/images/actua2.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/actua2.jpg"
                   alt="Recherche économique"
                   width={240}
                   height={150}
@@ -111,7 +111,7 @@ export default function Home() {
                 en Côte d'Ivoire.
                 </p>
                 <Image 
-                  src="/images/cloturepep.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/cloturepep.jpg"
                   alt="Formation académique"
                   width={240}
                   height={150}
@@ -130,7 +130,7 @@ export default function Home() {
                   Fournir des conseils stratégiques aux décideurs politiques et aux parties prenantes.
                 </p>
                 <Image
-                  src="/images/toponymieetude.jpg?text=Recherche+Économique&height=120&width=240"
+                  src="/images/toponymieetude.jpg"
                   alt="Conseil stratégique"
                   width={240}
                   height={150}
@@ -242,7 +242,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-lg shadow-lg group">
                 <div className="relative h-64 md:h-80 w-full transition-transform duration-500 ease-in-out group-hover:scale-110">
                   <Image
-                    src="/images/album4.jpg?text=Atelier+de+Formation&height=400&width=300"
+                    src="/images/album4.jpg"
                     alt="Atelier de formation"
                     fill
                     className="object-cover"
@@ -256,7 +256,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-lg shadow-lg group">
                 <div className="relative h-48 md:h-64 w-full transition-transform duration-500 ease-in-out group-hover:scale-110">
                   <Image
-                    src="/images/album1.jpg?text=Réunion+d'Experts&height=300&width=400"
+                    src="/images/album1.jpg"
                     alt="Réunion d'experts"
                     fill
                     className="object-cover"
@@ -302,7 +302,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-lg shadow-lg group">
                 <div className="relative h-64 md:h-80 w-full transition-transform duration-500 ease-in-out group-hover:scale-110">
                   <Image
-                    src="/images/album4.jpg?text=Équipe+de+Recherche&height=400&width=300"
+                    src="/images/album4.jpg"
                     alt="Équipe de recherche"
                     fill
                     className="object-cover"
@@ -316,7 +316,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-lg shadow-lg group">
                 <div className="relative h-48 md:h-64 w-full transition-transform duration-500 ease-in-out group-hover:scale-110">
                   <Image
-                    src="/images/album6.jpg?text=Cérémonie+de+Remise+de+Prix&height=300&width=400"
+                    src="/images/album6.jpg"
                     alt="Cérémonie de remise de prix"
                     fill
                     className="object-cover"
@@ -431,7 +431,7 @@ const recentPublications = [
     excerpt:
       "Cette étude analyse l'impact des différentes politiques fiscales sur la croissance économique à long terme.",
     date: "15 mars 2023",
-    coverImage: "/images/presentationdesresultatsdesdeuxétudesfinanceesparlepagds.jpg?text=Politiques+Fiscales&height=340&width=600",
+    coverImage: "/images/presentationdesresultatsdesdeuxétudesfinanceesparlepagds.jpg",
   },
   {
     id: "2",
@@ -439,7 +439,7 @@ const recentPublications = [
     excerpt:
       "Une étude approfondie des dynamiques du marché du travail et des facteurs contribuant aux inégalités salariales.",
     date: "20 avril 2023",
-    coverImage: "/images/constructiondunindiceetsousindicesendogènesdesuividelagouvenci.jpg?text=Marché+du+Travail&height=340&width=600",
+    coverImage: "/images/constructiondunindiceetsousindicesendogènesdesuividelagouvenci.jpg",
   },
   {
     id: "3",
@@ -447,7 +447,7 @@ const recentPublications = [
     excerpt:
       "Cette publication examine l'efficacité des politiques de développement durable et propose des recommandations.",
     date: "5 décembre 2022",
-    coverImage: "/images/pr3.jpg?text=Développement+Durable&height=340&width=600",
+    coverImage: "/images/pr3.jpg",
   },
 ]
 
@@ -458,7 +458,7 @@ const recentNews = [
     excerpt:
       "Le CAPEC organise sa conférence annuelle sur les politiques économiques le 15 mars 2023. Inscrivez-vous dès maintenant pour participer à cet événement majeur.",
     date: "8 octobre 2024",
-      image: "/images/leçoninauguraledu30eanniversairedelacapecfaiteparmahoutouemmanuelkoffi1.jpg?text=Conférence+Annuelle&height=340&width=600",
+      image: "/images/leçoninauguraledu30eanniversairedelacapecfaiteparmahoutouemmanuelkoffi1.jpg",
   },
   {
     id: "2",
@@ -466,6 +466,6 @@ const recentNews = [
     excerpt:
       "Le CAPEC est fier d'annoncer un nouveau partenariat de recherche avec l'Université de Paris-Saclay pour étudier les impacts économiques du changement climatique.",
     date: "9 octobre 2024",
-    image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg?text=Partenariat+Universitaire&height=340&width=600",
+    image: "/images/dinerdes30eanniversairedelacapec9octobre24.jpg",
   },
 ]

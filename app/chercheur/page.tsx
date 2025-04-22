@@ -134,21 +134,21 @@ const seniorResearchers = [
     id: "1",
     name: "Prof AHOURE ALBAN ALPHONSE EMMANUEL",
     title: "Directeur de la CAPEC",
-    photo: "/images/profahourealbanalphonseemmanueldirecteurdelacapec.jpg?t&height=300&width=1200",
+    photo: "/images/profahourealbanalphonseemmanueldirecteurdelacapec.jpg",
     expertise: ["Économie", "Gestion", "Politiques publiques"]
   },
   {
     id: "2",
     name: "Prof KIMOU ASSI JOSE CARLOS",
     title: "Directeur Adjoint de la CAPEC",
-    photo: "/images/directeuradjointdelacapec.jpg?text=Dr.+Marie+Koné&height=300&width=300",
+    photo: "/images/directeuradjointdelacapec.jpg",
     expertise: ["Macroéconomie", "Développement", "Analyse économique"]
   },
   {
     id: "3",
     name: "Dr KRAMO GERMAIN",
     title: "Chercheur- Responsable de la Gestion administrative",
-    photo: "/images/chercheurresponsabledelagestionadministrative.jpg?text=Dr.+Jean+Touré&height=300&width=300",
+    photo: "/images/chercheurresponsabledelagestionadministrative.jpg",
     expertise: ["Administration", "Gestion", "Organisation"]
   }
 ]

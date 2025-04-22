@@ -78,7 +78,7 @@ export default function ContactPage() {
         {/* Banner Image */}
         <div className="mt-8 relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?text=Contactez+le+CAPEC&height=250&width=1200"
+            src="/placeholder.svg"
             alt="Contactez le CAPEC"
             width={1200}
             height={250}
@@ -250,7 +250,7 @@ export default function ContactPage() {
                 <div className="aspect-video w-full overflow-hidden rounded-md border">
                   {/* Placeholder for map - in a real implementation, you would use a map component */}
                   <Image
-                    src="/placeholder.svg?text=Carte+Université+Félix+Houphouët-Boigny+Abidjan&height=300&width=600"
+                    src="/placeholder.svg"
                     alt="Carte de localisation du CAPEC"
                     width={600}
                     height={300}

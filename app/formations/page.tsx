@@ -24,7 +24,7 @@ export default function FormationsPage() {
         {/* Banner Image */}
         <div className="mt-8 relative rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?text=Formations+au+CAPEC&height=300&width=1200"
+            src="/placeholder.svg"
             alt="Formations au CAPEC"
             width={1200}
             height={300}
@@ -266,7 +266,7 @@ const academicPrograms = [
       "Programme d'encadrement et de mentorat pour les doctorants en économie, offrant un accompagnement personnalisé par des chercheurs expérimentés.",
     duration: "3-4 ans",
     audience: "Doctorants en économie",
-    image: "/placeholder.svg?text=Programme+Doctoral&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "master",
@@ -275,7 +275,7 @@ const academicPrograms = [
       "Programme de stage pour les étudiants en Master, permettant d'acquérir une expérience pratique en recherche économique appliquée.",
     duration: "3-6 mois",
     audience: "Étudiants en Master",
-    image: "/placeholder.svg?text=Stage+Master&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "ecole-ete",
@@ -284,7 +284,7 @@ const academicPrograms = [
       "Formation intensive de deux semaines sur les méthodes de recherche avancées en économie pour les jeunes chercheurs.",
     duration: "2 semaines",
     audience: "Jeunes chercheurs",
-    image: "/placeholder.svg?text=École+d'été&height=200&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -296,7 +296,7 @@ const professionalPrograms = [
       "Formation sur les méthodes d'analyse des politiques économiques et leur impact sur le développement économique et social.",
     duration: "5 jours",
     audience: "Professionnels du secteur public",
-    image: "/placeholder.svg?text=Analyse+Politiques&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "evaluation-impact",
@@ -304,7 +304,7 @@ const professionalPrograms = [
     description: "Formation sur les méthodes d'évaluation d'impact des programmes et politiques de développement.",
     duration: "5 jours",
     audience: "Analystes et gestionnaires de projets",
-    image: "/placeholder.svg?text=Évaluation+Impact&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "analyse-donnees",
@@ -312,7 +312,7 @@ const professionalPrograms = [
     description: "Formation sur les techniques d'analyse des données économiques et les logiciels spécialisés.",
     duration: "3 jours",
     audience: "Analystes économiques",
-    image: "/placeholder.svg?text=Analyse+Données&height=200&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -324,7 +324,7 @@ const workshops = [
       "Atelier pratique sur les techniques économétriques avancées et leur application à l'analyse des politiques économiques.",
     duration: "2 jours",
     audience: "Chercheurs et analystes",
-    image: "/placeholder.svg?text=Économétrie+Appliquée&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "modelisation",
@@ -332,7 +332,7 @@ const workshops = [
     description: "Séminaire sur les techniques de modélisation économique pour l'analyse des politiques publiques.",
     duration: "3 jours",
     audience: "Économistes et chercheurs",
-    image: "/placeholder.svg?text=Modélisation+Économique&height=200&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "redaction",
@@ -341,7 +341,7 @@ const workshops = [
       "Atelier sur les techniques de rédaction d'articles scientifiques et de rapports de recherche en économie.",
     duration: "2 jours",
     audience: "Chercheurs et doctorants",
-    image: "/placeholder.svg?text=Rédaction+Scientifique&height=200&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -357,7 +357,7 @@ const upcomingTrainings = [
     participants: "25 places",
     level: "Avancé",
     trainer: "Dr. Jean Touré",
-    image: "/placeholder.svg?text=Séminaire+Économétrie&height=300&width=400",
+    image: "/placeholder.svg",
   },
   {
     id: "t2",
@@ -370,7 +370,7 @@ const upcomingTrainings = [
     participants: "30 places",
     level: "Intermédiaire",
     trainer: "Dr. Marie Koné",
-    image: "/placeholder.svg?text=Atelier+Évaluation+Impact&height=300&width=400",
+    image: "/placeholder.svg",
   },
 ]
 
@@ -380,14 +380,14 @@ const testimonials = [
     text: "La formation en économétrie appliquée m'a permis d'acquérir des compétences précieuses que j'utilise quotidiennement dans mon travail d'analyste. Les formateurs étaient excellents et le contenu très pertinent.",
     name: "Konan Kouassi",
     position: "Analyste économique, Ministère de l'Économie",
-    photo: "/placeholder.svg?text=KK&height=100&width=100",
+    photo: "/placeholder.svg",
   },
   {
     id: "test2",
     text: "Le programme doctoral du CAPEC a été déterminant dans mon parcours académique. L'encadrement personnalisé et l'accès aux ressources de recherche m'ont permis de mener à bien ma thèse dans les meilleures conditions.",
     name: "Aminata Bamba",
     position: "Doctorante en économie",
-    photo: "/placeholder.svg?text=AB&height=100&width=100",
+    photo: "/placeholder.svg",
   },
 ]
 

@@ -214,7 +214,7 @@ const upcomingEvents = [
     date: "15-16 mars 2023",
     time: "9h00 - 17h00",
     location: "Hôtel Ivoire, Abidjan",
-    image: "/placeholder.svg?text=Conférence+Internationale&height=300&width=500",
+    image: "/placeholder.svg",
   },
   {
     id: "event2",
@@ -224,7 +224,7 @@ const upcomingEvents = [
     date: "5-7 juin 2023",
     time: "9h00 - 16h00",
     location: "Campus UFHB, Cocody",
-    image: "/placeholder.svg?text=Séminaire+Économétrie&height=300&width=500",
+    image: "/placeholder.svg",
   },
   {
     id: "event3",
