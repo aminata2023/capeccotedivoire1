@@ -21,7 +21,7 @@ export default function NosActivitesPage() {
       description:
         "Conduire des recherches de haute qualité sur les questions économiques pertinentes pour la Côte d'Ivoire et l'Afrique de l'Ouest.",
       imageSrc:
-        "/images/Nos_activités/LIEN_ENTRE_EXTREMISME_VIOLENT_ET_ACTIVITES_ILLICITES_DANS_LA_REGION_DU_FOLON.jpeg",
+        "/images/nosactivite/lienactivite.jpg",
       alt: "Recherche économique",
     },
     {
@@ -30,7 +30,7 @@ export default function NosActivitesPage() {
       title: "Formation",
       description:
         "Former la prochaine génération d'analystes et de chercheurs en économie à travers divers programmes éducatifs.",
-      imageSrc: "/images/Nos_activités/Formation_Agent_DGI.jpg",
+      imageSrc: "/images/nosactivite/formationdgi.jpg",
       alt: "Formation académique",
     },
     {
@@ -39,7 +39,7 @@ export default function NosActivitesPage() {
       title: "Étude",
       description:
         "Fournir des conseils stratégiques aux décideurs politiques et aux parties prenantes sur les questions économiques.",
-      imageSrc: "/images/Nos_activités/Elaboration_de_la_SRMT.jpeg",
+      imageSrc: "/images/nosactivite/elaboration.jpg",
       alt: "Conseil stratégique",
     },
     {
@@ -49,7 +49,7 @@ export default function NosActivitesPage() {
       description:
         "Organiser et participer à des conférences nationales et internationales sur les enjeux économiques.",
       imageSrc:
-        "/images/Nos_activités/Conference JICA-JAPAN CORNER-CAPEC 22 Février 2024.jpg",
+        "/images/nosactivite/conferencejica.jpg",
       alt: "Conférences économiques",
     },
   ];
