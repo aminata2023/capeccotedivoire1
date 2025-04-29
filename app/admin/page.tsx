@@ -1,12 +1,29 @@
-import { cookies } from "next/headers";
+'use client'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
-export default async function AdminPage() {
-  const cookiesData = await cookies();
-  const auth = cookiesData.get("auth");
+export default function AdminPage() {
+  const router = useRouter()
 
-  if (auth?.value !== "authenticated") {
-    return <p>Accès refusé</p>;
-  }
+  // Protection basique de la page
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        const res = await fetch('/api/auth/check')
+        if (!res.ok) {
+          router.push('/login')
+        }
+      } catch (error) {
+        router.push('/login')
+      }
+    }
+    checkAuth()
+  }, [router])
 
-  return <div className="p-6">Bienvenue dans le back-office !</div>;
+  return (
+    <div className="admin-container">
+      <h1>Tableau de bord Admin</h1>
+      {/* Votre contenu admin ici */}
+    </div>
+  )
 }
