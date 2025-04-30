@@ -16,8 +16,8 @@ export default function DashboardPage() {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const res = await fetch('/api/auth/check')
-        if (!res.ok) router.push('/login')
+        //const res = await fetch('/api/auth/check')
+        //if (!res.ok) router.push('/login')
         
         // Charger les stats (à remplacer par vos appels API)
         setStats({
