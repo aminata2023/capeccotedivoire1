@@ -5,49 +5,42 @@ import Link from 'next/link'
 import { Eye, EyeOff } from 'lucide-react'
 
 export default function LoginPage() {
-  const [email, setEmail] = useState<string>('')
-  const [password, setPassword] = useState<string>('')
-  const [error, setError] = useState<string>('')
-  const [showPassword, setShowPassword] = useState<boolean>(false)
-  const [isLoading, setIsLoading] = useState<boolean>(false)
-  const router = useRouter()
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsLoading(true)
-    setError('')
-    
-    try {
-      const res = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password })
-      })
-      
-      if (res.ok) {
-        router.push('/admin')
-      } else {
-        const data = await res.json()
-        setError(data.error || 'Email ou mot de passe incorrect')
-      }
-    } catch (err) {
-      setError('Erreur de connexion au serveur')
-    } finally {
-      setIsLoading(false)
+    e.preventDefault();
+    setIsLoading(true);
+    setError('');
+
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, password }),
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    setIsLoading(false);
+
+    if (res.ok) {
+      router.push('/admin');
+    } else {
+      setError('Identifiants incorrects');
     }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-indigo-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          {/* En-tête avec fond coloré */}
           <div className="bg-gradient-to-r from-orange-600 to-green-700 p-6 text-center">
             <h1 className="text-2xl font-bold text-white">Connexion Admin</h1>
             <p className="text-orange-100 mt-1">Accédez à votre espace d'administration</p>
           </div>
 
-          {/* Formulaire */}
           <div className="p-6 sm:p-8">
             {error && (
               <div className="mb-4 bg-red-50 border-l-4 border-red-500 p-4 rounded">
@@ -65,19 +58,17 @@ export default function LoginPage() {
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                   Email
                 </label>
-                <div className="relative">
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all"
-                    placeholder="votre@email.com"
-                  />
-                </div>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all"
+                  placeholder="votre@email.com"
+                />
               </div>
 
               <div>
@@ -107,23 +98,19 @@ export default function LoginPage() {
               </div>
 
               <div className="flex items-center justify-between">
-                <div className="flex items-center">
+                <label className="flex items-center space-x-2 text-sm text-gray-700">
                   <input
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
                     className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                   />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-700">
-                    Se souvenir de moi
-                  </label>
-                </div>
+                  <span>Se souvenir de moi</span>
+                </label>
 
-                <div className="text-sm">
-                  <Link href="/forgot-password" className="font-medium text-orange-600 hover:text-orange-500">
-                    Mot de passe oublié ?
-                  </Link>
-                </div>
+                <Link href="/forgot-password" className="text-sm font-medium text-orange-600 hover:text-orange-500">
+                  Mot de passe oublié ?
+                </Link>
               </div>
 
               <div>
@@ -159,5 +146,5 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
