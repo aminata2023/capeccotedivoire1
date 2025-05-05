@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function LoginPage() {
   const router = useRouter();
   const [error, setError] = useState("");
-
+  console.log(error);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget as HTMLFormElement);
